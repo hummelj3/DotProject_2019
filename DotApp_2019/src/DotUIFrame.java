@@ -3,11 +3,17 @@ import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
+
+import javax.swing.AbstractAction;
 import javax.swing.JButton;
+import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
+import javax.swing.KeyStroke;
 import javax.swing.UIManager;
 import javax.swing.plaf.FontUIResource;
 
@@ -26,9 +32,10 @@ public class DotUIFrame extends JFrame
 		//setting name
 		super(title);
 		
-		//setting layout manager
+		//setting layout manager and stuff
 		setLayout(new BorderLayout());
-
+		setUndecorated(true);
+		
 		//making a details panel
 		detailsPanel = new DetailsPanel();
 		
@@ -80,10 +87,21 @@ public class DotUIFrame extends JFrame
 		}
 		*/
 		
+		//kill program on esc key press
+		getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(
+		    KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "EXIT"); 
+		    getRootPane().getActionMap().put("EXIT", new AbstractAction(){ 
+		        public void actionPerformed(ActionEvent e)
+		        {
+		            dispose();
+		        }
+	    });
+	    
 		//getting screen size
-		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		//Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		//setting width and height to fit screen 
-		setSize(screenSize.width,screenSize.height);
+		//setSize(screenSize.width,screenSize.height);
+		setExtendedState(JFrame.MAXIMIZED_BOTH); 
 		
 		//adding swing components
 		Container c = getContentPane();
