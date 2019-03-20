@@ -2,12 +2,17 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+
+import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
+import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.KeyStroke;
 import javax.swing.UIManager;
 import javax.swing.event.EventListenerList;
 import javax.swing.plaf.FontUIResource;
@@ -49,6 +54,7 @@ public class DetailsPanel extends JPanel
 		//submit button action listener//listens for button press
 		subBtn.addActionListener(new ActionListener()
 		{
+			//if user presses sub button
 			public void actionPerformed(ActionEvent e) 
 			{
 				// put user data into array to send to txt file
@@ -62,8 +68,9 @@ public class DetailsPanel extends JPanel
 				fireDetailEvent(new DetailEvent(this, data));
 				
 			}
-		});
-				
+			
+		});	
+		    
 		//setting layout
 		setLayout(null);
 		

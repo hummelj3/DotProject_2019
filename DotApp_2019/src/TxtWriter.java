@@ -1,3 +1,4 @@
+import java.awt.Dimension;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -5,18 +6,19 @@ import java.io.PrintWriter;
 
 public class TxtWriter 
 {
-	public void txtWriter(String num, String sex, String age, String hand, String date)
+	public void txtWriter(String num, String sex, String age, String hand, String date, Dimension screen)
 	{
 		try(FileWriter fw = new FileWriter("./Data/TestData.txt", true);
 	    BufferedWriter bw = new BufferedWriter(fw);
 	    PrintWriter out = new PrintWriter(bw))
 		{
 			out.println("User Data :");
-		    out.println("Assigned Num:        " + num);
-		    out.println("User Gender:         " + sex);
-		    out.println("User age:            " + age);
-		    out.println("User dominant hand:  " + hand);
-		    out.println("Date :               " + date);
+		    out.println("Assigned Num:               " + num);
+		    out.println("User Gender:                " + sex);
+		    out.println("User age:                   " + age);
+		    out.println("User dominant hand:         " + hand);
+		    out.println("Date :                      " + date);
+		    out.println("Width and Height of Screen: " + screen.width + ", " + screen.height);
 		    out.println("\n");
 		    
 		} 

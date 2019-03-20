@@ -5,5 +5,9 @@ Purpose: Research
 References: https://caveofprogramming.com/
 			Calculations for dot coordinates courtesy of Grace McFarlane
 			
-Directions: 
-Click Stuff................
+Info on Program:
+Quadrants are as follows, quadrant 1: bottom right, quadrant 2: top right, quadrant 3: top left, quadrant 4: bottom left. 
+Dot is 11 pixels wide and tall.
+Circle has a radius of 400.5 pixels. 
+Dot will spawn from 5 - 40 degrees from start of each quadrant.
+All dimensions are measured in pixels.

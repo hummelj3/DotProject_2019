@@ -19,13 +19,16 @@ import javax.swing.plaf.FontUIResource;
 
 public class DotUIFrame extends JFrame
 {
+	
 	private JTextArea txtArea;
 	private JButton introBtn;
 	private  DetailsPanel detailsPanel;
+	private DotTimer timer;
 	private IntroPopUp introPopUp;
 	private ConfirmPopUp confirmPopUp;
 	private EnterCorrectInfoPopUp correctInfoQPop;
 	private int input;
+	public static Boolean testing = true;
 	
 	public DotUIFrame(String title)
 	{
@@ -35,6 +38,7 @@ public class DotUIFrame extends JFrame
 		//setting layout manager and stuff
 		setLayout(new BorderLayout());
 		setUndecorated(true);
+		Container c = getContentPane();
 		
 		//making a details panel
 		detailsPanel = new DetailsPanel();
@@ -47,6 +51,9 @@ public class DotUIFrame extends JFrame
 		
 		//making confirmPopUp
 		confirmPopUp = new ConfirmPopUp();
+		
+		//getting screensize 
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		
 		//listens for command from details panel to send stuff to txt file
 		detailsPanel.addDetailListener(new DetailListener() 
@@ -63,10 +70,10 @@ public class DotUIFrame extends JFrame
         		if(input == 0)
         		{
         			//test call to txt writer
-        			write.txtWriter(data[0],data[1],data[2],data[3],data[4]);
+        			write.txtWriter(data[0],data[1],data[2],data[3],data[4], screenSize);
         			
-        			//TODO: call to circle dot
-        		
+        			//call to timer, timer will call and draw circle and dot at specified intervals
+        			timer = new DotTimer(c);
         			
         		}
         		else
@@ -87,24 +94,23 @@ public class DotUIFrame extends JFrame
 		}
 		*/
 		
-		//kill program on esc key press
-		getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(
-		    KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "EXIT"); 
-		    getRootPane().getActionMap().put("EXIT", new AbstractAction(){ 
-		        public void actionPerformed(ActionEvent e)
-		        {
-		            dispose();
-		        }
-	    });
-	    
-		//getting screen size
-		//Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		//setting width and height to fit screen 
-		//setSize(screenSize.width,screenSize.height);
+		//kill program on esc key press for testing, user will not be able to do this
+		if(testing == true)
+		{
+			getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(
+			    KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "EXIT"); 
+			    getRootPane().getActionMap().put("EXIT", new AbstractAction(){ 
+			        public void actionPerformed(ActionEvent e)
+			        {
+			        	System.exit(0);
+			        }
+		    });
+		}
+		
+		//makes fullscreen
 		setExtendedState(JFrame.MAXIMIZED_BOTH); 
 		
-		//adding swing components
-		Container c = getContentPane();
+		//adding detail panel to collect demographics
 		c.add(detailsPanel, BorderLayout.CENTER);
 		
 		//making visible
