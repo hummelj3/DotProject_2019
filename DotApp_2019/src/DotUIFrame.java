@@ -29,6 +29,8 @@ public class DotUIFrame extends JFrame
 	private EnterCorrectInfoPopUp correctInfoQPop;
 	private int input;
 	public static Boolean testing = true;
+	public static Boolean waiting;
+	public static Boolean recieved;
 	
 	public DotUIFrame(String title)
 	{
@@ -72,10 +74,34 @@ public class DotUIFrame extends JFrame
         			//test call to txt writer
         			write.txtWriter(data[0],data[1],data[2],data[3],data[4], screenSize);
         			
-        			//call to timer, timer will call and draw circle and dot at specified intervals
-        			timer = new DotTimer(c);
+        			//call to timer, timer will call and draw circle and dot at specified intervals 80x
+        			int i;
+        			for(i = 0; i <= 80; i++)
+        			{
+        				timer = new DotTimer(c);
+        				//waits for click from user
+        				while(waiting)
+        				{
+        					//testing
+        					if(testing == true)
+        					{
+        						System.out.println("waiting...");
+        						if(recieved == true)
+        						{
+        							System.out.println("recieved!");
+        						}
+        					}
+        				}
+        			}
         			
+        			//testing
+        			if(testing == true)
+        			{
+        				System.out.println(i);
+        			}
         		}
+        		
+        		//if user entered incorrectly
         		else
         		{
         			correctInfoQPop = new EnterCorrectInfoPopUp();

@@ -34,6 +34,7 @@ public class CirclePanel extends JPanel
 		//drawing circle to center of screen
 		g2.drawOval(x, y, radius * 2, radius * 2);
 		
+		
 		//TODO: draw dot w/in circle
 		if(DotTimer.time == 1)
 		{

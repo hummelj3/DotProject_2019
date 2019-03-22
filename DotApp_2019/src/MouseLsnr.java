@@ -11,14 +11,20 @@ public class MouseLsnr
 			 //mouse pressed
 		     public void mousePressed(MouseEvent e) 
 		     {
-		    	 System.out.println("click");
-		    	 System.out.println(e.getX());
-		    	 System.out.println(e.getY());
+		    	 if(DotUIFrame.testing == true)
+		    	 {
+			    	 System.out.println("click");
+			    	 System.out.println(e.getX());
+			    	 System.out.println(e.getY());
+		    	 }
 		     }
 		     //mouse released
 		     public void mouseReleased(MouseEvent e)
 		     {
-		    	 System.out.println("unclick");
+		    	 if(DotUIFrame.testing == true)
+		    	 {
+		    		 System.out.println("unclick");
+		    	 }
 		     }
 		});
 	}
