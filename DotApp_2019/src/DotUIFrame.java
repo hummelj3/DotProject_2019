@@ -2,11 +2,13 @@ import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Image;
+import java.awt.Point;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
-
 import javax.swing.AbstractAction;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
@@ -16,6 +18,7 @@ import javax.swing.JTextArea;
 import javax.swing.KeyStroke;
 import javax.swing.UIManager;
 import javax.swing.plaf.FontUIResource;
+
 
 public class DotUIFrame extends JFrame
 {
@@ -29,8 +32,7 @@ public class DotUIFrame extends JFrame
 	private EnterCorrectInfoPopUp correctInfoQPop;
 	private int input;
 	public static Boolean testing = true;
-	public static Boolean waiting;
-	public static Boolean recieved;
+	public static int trialNum = 0;
 	
 	public DotUIFrame(String title)
 	{
@@ -56,7 +58,7 @@ public class DotUIFrame extends JFrame
 		
 		//getting screensize 
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		
+				
 		//listens for command from details panel to send stuff to txt file
 		detailsPanel.addDetailListener(new DetailListener() 
 		{
@@ -75,30 +77,7 @@ public class DotUIFrame extends JFrame
         			write.txtWriter(data[0],data[1],data[2],data[3],data[4], screenSize);
         			
         			//call to timer, timer will call and draw circle and dot at specified intervals 80x
-        			int i;
-        			for(i = 0; i <= 80; i++)
-        			{
-        				timer = new DotTimer(c);
-        				//waits for click from user
-        				while(waiting)
-        				{
-        					//testing
-        					if(testing == true)
-        					{
-        						System.out.println("waiting...");
-        						if(recieved == true)
-        						{
-        							System.out.println("recieved!");
-        						}
-        					}
-        				}
-        			}
-        			
-        			//testing
-        			if(testing == true)
-        			{
-        				System.out.println(i);
-        			}
+    				timer = new DotTimer(c);
         		}
         		
         		//if user entered incorrectly
@@ -125,12 +104,13 @@ public class DotUIFrame extends JFrame
 		{
 			getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(
 			    KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "EXIT"); 
-			    getRootPane().getActionMap().put("EXIT", new AbstractAction(){ 
+			    getRootPane().getActionMap().put("EXIT", new AbstractAction()
+			    { 
 			        public void actionPerformed(ActionEvent e)
 			        {
 			        	System.exit(0);
 			        }
-		    });
+			    });
 		}
 		
 		//makes fullscreen

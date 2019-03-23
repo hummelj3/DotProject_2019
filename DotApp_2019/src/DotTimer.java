@@ -1,9 +1,13 @@
-import java.awt.Color;
+
 import java.awt.Container;
+import java.awt.Cursor;
+import java.awt.Image;
+import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import javax.swing.ImageIcon;
 import javax.swing.Timer;
-import javax.swing.event.EventListenerList;
 
 
 public class DotTimer 
@@ -11,20 +15,15 @@ public class DotTimer
 	private CirclePanel circle;
 	private BlackScreen blackscrn;
 	private MouseLsnr mouseListen;
-	private Timer timer;
-	private EventListenerList listenerList = new EventListenerList();
+	private static Timer timer;
 	private int i;
-	public static int quad;
 	public static int time;
 	
 	public DotTimer(Container c)
 	{
 		//setting delay to 0
 		int delay = 0;
-		//making black screen
-		blackscrn = new BlackScreen();
-		//making a circle to spawn dot in
-		circle = new CirclePanel();
+		
 		//making timer
 		timer = new Timer(delay, new ActionListener()
 		{
@@ -32,8 +31,24 @@ public class DotTimer
 			{
 				if (timer.getDelay() == 0)
 				{
+					// Transparent 16 x 16 pixel cursor image.
+					BufferedImage cursorImg = new BufferedImage(16, 16, BufferedImage.TYPE_INT_ARGB);
+					
+					//if not in testing mode
+					if(DotUIFrame.testing == true)
+					{
+						// Create a new blank cursor.
+						Cursor blankCursor = c.getToolkit().getDefaultToolkit().createCustomCursor(cursorImg, new Point(0, 0), "blank cursor");
+	
+						// Set the blank cursor to the JFrame.
+						c.setCursor(blankCursor);
+					}
+					
 					//making a circle to spawn dot in
 					circle = new CirclePanel();
+					
+					//making black screen
+					blackscrn = new BlackScreen();
 					
 					//add circle panel
 					c.removeAll();
@@ -86,20 +101,40 @@ public class DotTimer
 				//@ 3.5 seconds
 				if(i == 3500)
 				{
-					//set time to 0 so dot is not drawn
-					time = 0;
-					
 					//add circle panel
 					c.removeAll();
 					c.add(circle);
 					c.repaint();
 					c.validate();
 					
-					//makes && calls MouseLsnr
-					mouseListen = new MouseLsnr(c);
+					//if not in testing mode
+					if(DotUIFrame.testing != true)
+					{
+						//custom cursor stuff
+						Image cursorImage = new ImageIcon("C:\\Users\\Jeremy\\git\\repository\\DotApp_2019\\src\\CustomHand1.png").getImage();
+						Point hotspot = new Point(0, 0);
+						String cursorName = "CursorHand";
+						c.setCursor(c.getToolkit().createCustomCursor(cursorImage, hotspot, cursorName));
+					}
+					//reset timer
+					i = 0;
+					timer.setDelay(0);
 					
-					//stops timer
-					timer.stop();
+					//testing 
+					if(DotUIFrame.testing == true)
+					{
+						DotUIFrame.trialNum++;
+						System.out.println(DotUIFrame.trialNum);
+					}
+					//if not in testing mode
+					else
+					{
+						//makes && calls MouseLsnr
+						mouseListen = new MouseLsnr(c);
+						
+						//stops timer
+						timer.stop();
+					}
 				}
 				
 			}
@@ -107,5 +142,11 @@ public class DotTimer
 		
 		//starts timer
 		timer.start();
+	}
+	
+	//restart timer
+	public static void timerRestart()
+	{
+		timer.restart();
 	}
 }

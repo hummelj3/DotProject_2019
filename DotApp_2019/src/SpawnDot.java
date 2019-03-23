@@ -6,6 +6,10 @@ import javax.swing.JPanel;
 
 public class SpawnDot extends JPanel
 {
+	public static int dotCoords[];
+	public static int quad; 
+	//private RandomCoord rand;
+	
 	public SpawnDot(Graphics2D g2)
 	{
 		//getting screensize 
@@ -16,7 +20,8 @@ public class SpawnDot extends JPanel
 		int centerY = screenSize.height/2;
 		
 		//TODO: math to spawn dot 
-		//int[] xy = RandCoord();
+		//rand = new RandomCoord();
+		//int[] xy = rand();
 		
 		//temp:
 		int x = screenSize.width / 2 - 10;
@@ -25,17 +30,30 @@ public class SpawnDot extends JPanel
 		//draws dot
 		g2.drawOval(x,y,10,10);
 		
+		//saves which quadrant dot spawned in to sends to txt file:
 		//if quad 1
 		if(x > centerX && y > centerY)
 		{
-			DotTimer.quad = 1;
+			quad = 1;
 		}
 		
 		//if quad 2 
+		if(x > centerX && y < centerY)
+		{
+			quad = 2;
+		}
 		
 		//if quad 3
+		if(x < centerX && y < centerY)
+		{
+			quad = 3;
+		}
 		
 		//if quad 4
+		if(x < centerX && y > centerY)
+		{
+			quad = 4;
+		}
 	}
 	
 }
