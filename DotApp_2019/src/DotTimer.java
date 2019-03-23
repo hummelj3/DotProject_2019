@@ -35,7 +35,7 @@ public class DotTimer
 					BufferedImage cursorImg = new BufferedImage(16, 16, BufferedImage.TYPE_INT_ARGB);
 					
 					//if not in testing mode
-					if(DotUIFrame.testing == true)
+					if(DotUIFrame.testing != true)
 					{
 						// Create a new blank cursor.
 						Cursor blankCursor = c.getToolkit().getDefaultToolkit().createCustomCursor(cursorImg, new Point(0, 0), "blank cursor");
