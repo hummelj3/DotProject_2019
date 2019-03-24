@@ -31,10 +31,12 @@ public class MouseLsnr
 			    	 System.out.println(e.getY());
 		    	 }
 		    	 
+		    	//increase trial num for every trial
+		    	 DotUIFrame.trialNum++;
 		    	 //set to custom clicked cursor
 		    	 c.setCursor(c.getToolkit().createCustomCursor(cursorImage2, hotspot, cursorName2));   
 		    	 
-		    	 //TODO: send to txt doc
+		    	 //TODO: send data to txt doc
 		    	 
 		     }
 		     //mouse released
@@ -43,9 +45,10 @@ public class MouseLsnr
 		    	//set cursor to regular
 		    	 c.setCursor(c.getToolkit().createCustomCursor(cursorImage, hotspot, cursorName));
 		    	 
+		    	 //if 80 trials gone by...
 		    	 if(DotUIFrame.trialNum == 80)
 		    	 {
-		    		//fire action event to signal dot ui frame to bring up ending dialog so user can be done with this nightmare
+		    		//TODO: fire action event to signal dot ui frame to bring up ending dialog so user can be done with this nightmare
 		    		
 		    	 }
 		    	 

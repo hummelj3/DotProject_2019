@@ -33,6 +33,10 @@ public class DotUIFrame extends JFrame
 	private int input;
 	public static Boolean testing = true;
 	public static int trialNum = 0;
+	public static int trackQuad1 = 20;
+	public static int trackQuad2 = 20;
+	public static int trackQuad3 = 20;
+	public static int trackQuad4 = 20;
 	
 	public DotUIFrame(String title)
 	{
@@ -88,11 +92,11 @@ public class DotUIFrame extends JFrame
             }
         });
 		
-		//TODO: Listens for click in circle panel
+		//TODO: Listens for last click in MouseLsnr
 		/*
-		CirclePanel.addCircleListener(new CircleListener() 
+		MouseLsnr.addMouseLsnrListener(new MouseLsnrListener() 
 		{
-            public void cirlceEventOccurred(CircleEvent event) 
+            public void mouseLsnrEventOccurred(mouseLsnrEvent event) 
             {
             	
             }

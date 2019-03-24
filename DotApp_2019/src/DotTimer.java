@@ -119,12 +119,13 @@ public class DotTimer
 					//reset timer
 					i = 0;
 					timer.setDelay(0);
-					
-					//testing 
+
+					//if in testing mode  
 					if(DotUIFrame.testing == true)
 					{
+						//increase trial num for every trial
 						DotUIFrame.trialNum++;
-						System.out.println(DotUIFrame.trialNum);
+						System.out.println("Trial Num: " + DotUIFrame.trialNum);
 					}
 					//if not in testing mode
 					else

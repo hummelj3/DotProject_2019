@@ -14,6 +14,8 @@ public class CirclePanel extends JPanel
 	
 	private SpawnDot dotSpawn;
 	
+	public static int radius;
+	
 	public void paintComponent(Graphics g) 
 	{
 		Graphics2D g2 = (Graphics2D) g;
@@ -25,7 +27,7 @@ public class CirclePanel extends JPanel
 		//dimensions of circle
 		int x = screenSize.width / 2 - 400;
 		int y = screenSize.height / 2 - 400;
-		int radius = 400;
+		radius = 400;
 		
 		//setting color and line weight
 		g2.setColor(Color.BLACK);
