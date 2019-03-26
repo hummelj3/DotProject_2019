@@ -37,6 +37,8 @@ public class DotUIFrame extends JFrame
 	public static int trackQuad2 = 20;
 	public static int trackQuad3 = 20;
 	public static int trackQuad4 = 20;
+	public static double highAng = 0;
+	public static double lowAng  = 100;
 	
 	public DotUIFrame(String title)
 	{

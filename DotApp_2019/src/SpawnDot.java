@@ -56,7 +56,7 @@ public class SpawnDot extends JPanel
 		}
 				
 		//Spawns dot in specified quad
-		int[] xy = random.randCoord(1);
+		int[] xy = random.randCoord(2);
 		
 		//temp:
 		int x = screenSize.width / 2 - 10;
