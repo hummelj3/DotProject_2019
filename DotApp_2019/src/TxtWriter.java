@@ -1,4 +1,5 @@
 import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -20,6 +21,8 @@ public class TxtWriter
 		    out.println("User dominant hand:         " + hand);
 		    out.println("Date :                      " + date);
 		    out.println("Width and Height of Screen: " + screen.width + ", " + screen.height);
+		    out.println("Center of Circle X: " + screen.width);
+		    out.println("Center of Circle Y: " + screen.height);
 		    out.println("\n");
 		    
 		} 
@@ -28,7 +31,7 @@ public class TxtWriter
 		    //exception handling left as an exercise for the reader
 		}
 	}
-	public void txtWriter(int actCoordx, int actCoordy, int userX, int userY, int centerX, int centerY, int actQuad)
+	public void txtWriter(int actCoordx, int actCoordy, int userX, int userY, int actQuad, int trial)
 	{
 		try(FileWriter fw = new FileWriter("./Data/TestData.txt", true);
 	    BufferedWriter bw = new BufferedWriter(fw);
@@ -36,9 +39,11 @@ public class TxtWriter
 		{
 			//0 place is quadrant
 			int[] info = {1,2,3,4,5};
-			info = maths(actCoordx, actCoordy, userX, userY, centerX, centerY);
+			info = maths(actCoordx, actCoordy, userX, userY);
 			
 			//outputting data to txt doc
+			out.print("trial Number: " + trial);
+			out.print(" | ");
 			out.print("Actual Quadrant: " + actQuad);
 		    out.print(" | ");
 		    out.print("Actual Coord x: " + actCoordx);
@@ -50,11 +55,8 @@ public class TxtWriter
 		    out.print("User Coord x: " + userX);
 		    out.print(" | ");
 		    out.print("User Coord y: " + userY);
-		    out.print(" | ");
-		    out.print("Center of Circle x : " + centerX);
-		    out.print(" | ");
-		    out.print("Center of Circle x : " + centerY);
 		    out.print("\n");
+		    out.println();
 		    
 		} 
 		catch (IOException e) 
@@ -64,42 +66,45 @@ public class TxtWriter
 	}
 	
 	//maths for data in txt doc
-	public int[] maths(int actCoordx, int actCoordy, int userX, int userY, int centerX, int centerY)
+	public int[] maths(int actCoordx, int actCoordy, int userX, int userY)
 	{
 		//0 place is quadrant
 		int[] info = {1,2,3,4,5};
 		
+		//getting screen dimension
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		
+		//center coords
+		int centerX = screenSize.width/2;
+		int centerY = screenSize.height/2;
+		
 		//give what quad user clicked in
 		//if in quad 1
-		if(actCoordx > centerX && actCoordy > centerY)
+		if(userX > centerX && userY > centerY)
  		{
  			info[0] = 1;
- 			DotUIFrame.trackQuad1--;
  		}
  		
  		//if quad 2 
- 		if(actCoordx > centerX && actCoordy < centerY)
+ 		if(userX > centerX && userY < centerY)
  		{
  			info[0] = 2;
- 			DotUIFrame.trackQuad2--;
  		}
  		
  		//if quad 3
- 		if(actCoordx < centerX && actCoordy < centerY)
+ 		if(userX < centerX && userY < centerY)
  		{
  			info[0] = 3;
- 			DotUIFrame.trackQuad3--;
  		}
  		
  		//if quad 4
- 		if(actCoordx < centerX && actCoordy > centerY)
+ 		if(userX < centerX && userY > centerY)
  		{
  			info[0] = 4;
- 			DotUIFrame.trackQuad4--;
  		}
  		
  		//will only happen in testing
- 		if(actCoordx == centerX && actCoordy == centerY)
+ 		if(userX == centerX && userY == centerY)
  		{
  			info[0] = 0;
  		}

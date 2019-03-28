@@ -29,6 +29,8 @@ public class DotTimer
 		{
 			public void actionPerformed(ActionEvent evt) 
 			{
+				
+				//@ 0 seconds
 				if (timer.getDelay() == 0)
 				{
 					// Transparent 16 x 16 pixel cursor image.
@@ -42,6 +44,16 @@ public class DotTimer
 	
 						// Set the blank cursor to the JFrame.
 						c.setCursor(blankCursor);
+					}
+					
+					//increase trial num for every trial
+					DotUIFrame.trialNum++;
+					
+					//if in testing mode  
+					if(DotUIFrame.testing == true)
+					{
+						//print out trial num for testing
+						System.out.println("Trial Num: " + DotUIFrame.trialNum);
 					}
 					
 					//making a circle to spawn dot in
@@ -116,19 +128,13 @@ public class DotTimer
 						String cursorName = "CursorHand";
 						c.setCursor(c.getToolkit().createCustomCursor(cursorImage, hotspot, cursorName));
 					}
+					
 					//reset timer
 					i = 0;
 					timer.setDelay(0);
-
-					//if in testing mode  
-					if(DotUIFrame.testing == true)
-					{
-						//increase trial num for every trial
-						DotUIFrame.trialNum++;
-						System.out.println("Trial Num: " + DotUIFrame.trialNum);
-					}
+					
 					//if not in testing mode
-					else
+					if(DotUIFrame.testing != true)
 					{
 						//makes && calls MouseLsnr
 						mouseListen = new MouseLsnr(c);

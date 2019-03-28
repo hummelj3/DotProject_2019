@@ -5,9 +5,13 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.ImageIcon;
 import javax.swing.Timer;
+import javax.swing.event.EventListenerList;
 
 public class MouseLsnr
 {
+	private TxtWriter txtWriter;
+	private EventListenerList listenerList = new EventListenerList();
+	
 	public MouseLsnr(Container c)
 	{
 		//custom cursor stuff
@@ -16,10 +20,14 @@ public class MouseLsnr
 		String cursorName2 = "CursorHand2";
 		Image cursorImage = new ImageIcon("C:\\Users\\Jeremy\\git\\repository\\DotApp_2019\\src\\CustomHand1.png").getImage();
 		String cursorName = "CursorHand";
+
+		//making txt writer
+		txtWriter = new TxtWriter();
 		
 		//mouse listener
-		c.addMouseListener(new MouseAdapter() 
+		c.addMouseListener(new MouseAdapter()
 		{
+			
 			 //mouse pressed
 		     public void mousePressed(MouseEvent e) 
 		     {
@@ -31,13 +39,11 @@ public class MouseLsnr
 			    	 System.out.println(e.getY());
 		    	 }
 		    	 
-		    	//increase trial num for every trial
-		    	 DotUIFrame.trialNum++;
 		    	 //set to custom clicked cursor
 		    	 c.setCursor(c.getToolkit().createCustomCursor(cursorImage2, hotspot, cursorName2));   
-		    	 
+		    	
 		    	 //TODO: send data to txt doc
-		    	 
+		    	 txtWriter.txtWriter(DotUIFrame.actX, DotUIFrame.actY, e.getX(), e.getY(), DotUIFrame.quad, DotUIFrame.trialNum);
 		     }
 		     //mouse released
 		     public void mouseReleased(MouseEvent e)
@@ -49,7 +55,7 @@ public class MouseLsnr
 		    	 if(DotUIFrame.trialNum == 80)
 		    	 {
 		    		//TODO: fire action event to signal dot ui frame to bring up ending dialog so user can be done with this nightmare
-		    		
+		    		 fireMouseLsnrEvent(new MouseLsnrEvent(this));
 		    	 }
 		    	 
 		    	 else
@@ -63,7 +69,33 @@ public class MouseLsnr
 			    	 //restart timer
 			    	 DotTimer.timerRestart();
 		    	 }
+		    	 
+		    	 //remove this listener at end of code so I don't make multiple listeners
+		    	 c.removeMouseListener(this);
 		     }
 		});
 	}
+	
+	public void fireMouseLsnrEvent(MouseLsnrEvent event) 
+    {
+        Object[] listeners = listenerList.getListenerList();
+        
+        for(int i = 0; i < listeners.length; i += 2) 
+        {
+            if(listeners[i] == MouseLsnrListener.class) 
+            {
+                ((MouseLsnrListener)listeners[i+1]).MouseLsnrEventOccurred(event);
+            }
+        }
+    }
+
+    public void addMouseLsnrListener(MouseLsnrListener listener) 
+    {
+        listenerList.add(MouseLsnrListener.class, listener);
+    }
+
+    public void removeMouseLsnrListener(MouseLsnrListener listener) 
+    {
+        listenerList.remove(MouseLsnrListener.class, listener);
+    }
 }

@@ -13,12 +13,13 @@ Circle has a radius of 400.5 pixels.
 Dot will spawn from 5 - 40 degrees from start of each quadrant.
 Angles are in radians
 All dimensions are measured in pixels.
-NOTE!: "Graph" per say of everything is flipped in an odd way. The top left corner of the screen is point (0,0). X get larger as point goes right ->
+NOTE!: "Graph" per say of everything is flipped in an odd way. The top left corner of the screen is point (0,0). X get larger as point goes right
 Y gets larger as point goes down from top of screen.
 quadrant 1 is bottom right
 quadrant 2 is upper right
 quadrant 3 is upper left
 quadrant 4 is bottom left
+quadrant 0 is center of circle 
 Conversions for pixels:
 	1 pixel (X) = 0.0264583333 cm
 	1 cm = 37.7952755906 pixel (X)

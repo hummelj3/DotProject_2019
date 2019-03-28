@@ -5,6 +5,31 @@ User age:
 User dominant hand:         
 Date :                      
 Width and Height of Screen: 3000, 2000
+Center of Circle X: 3000
+Center of Circle Y: 2000
+
+
+trial Number: 1 | Actual Quadrant: 4 | Actual Coord x: 1342 | Actual Coord y: 1030 | User Quadrant: 4 | User Coord x: 1315 | User Coord y: 1039
+
+trial Number: 2 | Actual Quadrant: 3 | Actual Coord x: 1451 | Actual Coord y: 858 | User Quadrant: 3 | User Coord x: 1433 | User Coord y: 830
+
+trial Number: 3 | Actual Quadrant: 4 | Actual Coord x: 1303 | Actual Coord y: 1087 | User Quadrant: 4 | User Coord x: 1283 | User Coord y: 1100
+
+trial Number: 4 | Actual Quadrant: 1 | Actual Coord x: 1689 | Actual Coord y: 1262 | User Quadrant: 1 | User Coord x: 1692 | User Coord y: 1268
+
+trial Number: 5 | Actual Quadrant: 3 | Actual Coord x: 1408 | Actual Coord y: 884 | User Quadrant: 3 | User Coord x: 1385 | User Coord y: 842
+
+trial Number: 6 | Actual Quadrant: 4 | Actual Coord x: 1194 | Actual Coord y: 1043 | User Quadrant: 4 | User Coord x: 1211 | User Coord y: 1127
+
+User Data :
+Assigned Num:               
+User Gender:                
+User age:                   
+User dominant hand:         
+Date :                      
+Width and Height of Screen: 3000, 2000
+Center of Circle X: 3000
+Center of Circle Y: 2000
 
 
 User Data :
@@ -14,6 +39,8 @@ User age:
 User dominant hand:         
 Date :                      
 Width and Height of Screen: 3000, 2000
+Center of Circle X: 3000
+Center of Circle Y: 2000
 
 
 User Data :
@@ -23,6 +50,8 @@ User age:
 User dominant hand:         
 Date :                      
 Width and Height of Screen: 3000, 2000
+Center of Circle X: 3000
+Center of Circle Y: 2000
 
 
 User Data :
@@ -32,6 +61,8 @@ User age:
 User dominant hand:         
 Date :                      
 Width and Height of Screen: 3000, 2000
+Center of Circle X: 3000
+Center of Circle Y: 2000
 
 
 User Data :
@@ -41,6 +72,8 @@ User age:
 User dominant hand:         
 Date :                      
 Width and Height of Screen: 3000, 2000
+Center of Circle X: 3000
+Center of Circle Y: 2000
 
 
 User Data :
@@ -50,194 +83,7 @@ User age:
 User dominant hand:         
 Date :                      
 Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
-
-
-User Data :
-Assigned Num:               
-User Gender:                
-User age:                   
-User dominant hand:         
-Date :                      
-Width and Height of Screen: 3000, 2000
+Center of Circle X: 3000
+Center of Circle Y: 2000
 
 

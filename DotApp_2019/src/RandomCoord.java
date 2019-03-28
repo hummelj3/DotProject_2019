@@ -43,15 +43,27 @@ public class RandomCoord
 				double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
 				
 				//max and min values for y w/in quadrant 1:
-				double minY = (Math.tan( (50*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-				double maxY = (Math.tan( (85*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+				double minY = 1;
+				double maxY = 0;
+				//max and min values for y w/in quadrant 1:
+				while(minY > maxY)
+				{
+					minY = (Math.tan( (50*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+					maxY = (Math.tan( (85*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+				}
 				
 				//random distance from center of circle y
-				double y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
+				double y = ThreadLocalRandom.current().nextDouble(minY - 1, maxY + 1);
 				
 				//max and min values for y w/in quadrant 1:
-				double minX = ( (1/(Math.tan( (85*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
-				double maxX = ( (1/(Math.tan( (50*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+				double minX = 1;
+				double maxX = 0;
+				//max and min values for y w/in quadrant 1:
+				while(minX > maxX)
+				{
+					minX = ( (1/(Math.tan( (85*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+					maxX = ( (1/(Math.tan( (50*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+				}
 				
 				//randomly choose value between max and min x
 				double x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
@@ -79,24 +91,34 @@ public class RandomCoord
 				int h = screenSize.height;
 				
 				//random distance from center of circle x
-				double min = 5*w;
+				double min = .5*w;
 				double max = (.5*w) + rad;
 				double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
 				
+				double minY = 1;
+				double maxY = 0;
 				//max and min values for y w/in quadrant 1:
-				double minY = (Math.tan( (-40*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-				double maxY = (Math.tan( (-5*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+				while(minY > maxY)
+				{
+					minY = (Math.tan( (-40*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+					maxY = (Math.tan( (-5*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+				}
 				
 				//random distance from center of circle y
 				double y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
-				
+
 				//max and min values for y w/in quadrant 1:
-				double minX = ( (1/(Math.tan( (-40*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
-				double maxX = ( (1/(Math.tan( (-5*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+				double minX = 1;
+				double maxX = 0;
+				while(minX > maxX)
+				{
+					minX = ( (1/(Math.tan( (-40*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+					maxX = ( (1/(Math.tan( (-5*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+				}
 				
 				//randomly choose value between max and min
 				double x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
-				
+		
 				//calc angle
 				theta = Math.atan( (y - (.5*h)) / (x - (.5*w)) );
 				theta2 = theta;
@@ -125,15 +147,27 @@ public class RandomCoord
 				double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
 				
 				//max and min values for y w/in quadrant 1:
-				double minY = (Math.tan( (85*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-				double maxY = (Math.tan( (50*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+				double minY = 1;
+				double maxY = 0;
+				//max and min values for y w/in quadrant 1:
+				while(minY > maxY)
+				{
+					minY = (Math.tan( (85*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+					maxY = (Math.tan( (50*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+				}
 				
 				//random distance from center of circle y
 				double y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
 				
 				//max and min values for y w/in quadrant 1:
-				double minX = ( (1/(Math.tan( (50*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
-				double maxX = ( (1/(Math.tan( (85*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+				double minX = 1;
+				double maxX = 0;
+				//max and min values for y w/in quadrant 1:
+				while(minX > maxX)
+				{
+					minX = ( (1/(Math.tan( (50*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+					maxX = ( (1/(Math.tan( (85*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+				}
 				
 				//randomly choose value between max and min
 				double x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
@@ -166,16 +200,27 @@ public class RandomCoord
 				double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
 
 				//max and min values for y w/in quadrant 1:
-				double minY = (Math.tan( (-5*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-				double maxY = (Math.tan( (-40*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-				
+				double minY = 1;
+				double maxY = 0;
+				//max and min values for y w/in quadrant 1:
+				while(minY > maxY)
+				{
+					minY = (Math.tan( (-5*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+					maxY = (Math.tan( (-40*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+				}
 				//random distance from center of circle y
 				double y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
 
 				//max and min values for y w/in quadrant 1:
-				double minX = ( (1/(Math.tan( (-5*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
-				double maxX = ( (1/(Math.tan( (-40*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
-				
+				double minX = 1;
+				double maxX = 0;
+				//max and min values for y w/in quadrant 1:
+				while(minX > maxX)
+				{
+					minX = ( (1/(Math.tan( (-5*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+					maxX = ( (1/(Math.tan( (-40*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+				}
+			
 				//randomly choose value between max and min
 				double x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
 
@@ -198,9 +243,7 @@ public class RandomCoord
 		//if testing mode on then print angle of act dot coords
 		if(DotUIFrame.testing == true)
 		{
-			System.out.println("act dot angle q1: " + theta);
-			DotUIFrame.highAng = theta;
-			DotUIFrame.lowAng = theta2;
+			System.out.println("act dot angle: " + theta);
 			if(theta > DotUIFrame.highAng)
 			{
 				DotUIFrame.highAng = theta;
@@ -221,6 +264,8 @@ public class RandomCoord
 		int[] xy2 = {1,2};
 		xy2[0] = (int) xy[0];
 		xy2[1] = (int) xy[1];
+		DotUIFrame.actX = xy2[0];
+		DotUIFrame.actY = xy2[1];
 		return xy2;
 	}
 	
