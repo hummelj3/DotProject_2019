@@ -77,32 +77,32 @@ public class DetailsPanel extends JPanel
 		//// FIRST COLUMN //////////////////////////////
 		
 		//user number
-		numLabel.setSize(screenSize.width/5, screenSize.height/20);
+		numLabel.setSize(screenSize.width/4, screenSize.height/20);
 		numLabel.setLocation(screenSize.width - (screenSize.width - 10), screenSize.height*1/20);
-		numLabel.setFont(new Font("Tahoma", Font.BOLD, 30));
+		numLabel.setFont(new Font("Tahoma", Font.BOLD, 20));
 		add(numLabel);
 		
 		//user sex
-		sexLabel.setSize(screenSize.width/5, screenSize.height/20);
+		sexLabel.setSize(screenSize.width/4, screenSize.height/20);
 		sexLabel.setLocation(screenSize.width - (screenSize.width - 10), screenSize.height*5/20);
-		sexLabel.setFont(new Font("Tahoma", Font.BOLD, 30));
+		sexLabel.setFont(new Font("Tahoma", Font.BOLD, 20));
 		add(sexLabel);
 		//user age
-		ageLabel.setSize(screenSize.width/5, screenSize.height/20);
+		ageLabel.setSize(screenSize.width/4, screenSize.height/20);
 		ageLabel.setLocation(screenSize.width - (screenSize.width - 10), screenSize.height*9/20);
-		ageLabel.setFont(new Font("Tahoma", Font.BOLD, 30));
+		ageLabel.setFont(new Font("Tahoma", Font.BOLD, 20));
 		add(ageLabel);
 		
 		//user dom hand
-		handLabel.setSize(screenSize.width/5, screenSize.height/20);
+		handLabel.setSize(screenSize.width/4, screenSize.height/20);
 		handLabel.setLocation(screenSize.width - (screenSize.width - 10), screenSize.height*13/20);
-		handLabel.setFont(new Font("Tahoma", Font.BOLD, 30));
+		handLabel.setFont(new Font("Tahoma", Font.BOLD, 20));
 		add(handLabel);
 		
 		//the date
-		dateLabel.setSize(screenSize.width/5, screenSize.height/20);
+		dateLabel.setSize(screenSize.width/4, screenSize.height/20);
 		dateLabel.setLocation(screenSize.width - (screenSize.width - 10), screenSize.height*17/20);
-		dateLabel.setFont(new Font("Tahoma", Font.BOLD, 30));
+		dateLabel.setFont(new Font("Tahoma", Font.BOLD, 20));
 		add(dateLabel);
 		
 		//// SECOND COLUMN //////////////////////////////
@@ -110,35 +110,35 @@ public class DetailsPanel extends JPanel
 		//text field user num
 		numField.setSize(screenSize.width/3, screenSize.height/20);
 		numField.setLocation(screenSize.width/3, screenSize.height*1/20);
-		numField.setFont(new Font("Tahoma", Font.BOLD, 30));
+		numField.setFont(new Font("Tahoma", Font.BOLD, 20));
 		add(numField);
 		
 		//text field sex
 		sexField.setSize(screenSize.width/3, screenSize.height/20);
 		sexField.setLocation(screenSize.width/3, screenSize.height*5/20);
-		sexField.setFont(new Font("Tahoma", Font.BOLD, 30));
+		sexField.setFont(new Font("Tahoma", Font.BOLD, 20));
 		add(sexField);
 		
 		//text field age
 		ageField.setSize(screenSize.width/3, screenSize.height/20);
 		ageField.setLocation(screenSize.width/3, screenSize.height*9/20);
-		ageField.setFont(new Font("Tahoma", Font.BOLD, 30));
+		ageField.setFont(new Font("Tahoma", Font.BOLD, 20));
 		add(ageField);
 		
 		//text field dom hand
 		handField.setSize(screenSize.width/3, screenSize.height/20);
 		handField.setLocation(screenSize.width/3, screenSize.height*13/20);
-		handField.setFont(new Font("Tahoma", Font.BOLD, 30));
+		handField.setFont(new Font("Tahoma", Font.BOLD, 20));
 		add(handField);
 		
 		//text field date
 		dateField.setSize(screenSize.width/3, screenSize.height/20);
 		dateField.setLocation(screenSize.width/3, screenSize.height*17/20);
-		dateField.setFont(new Font("Tahoma", Font.BOLD, 30));
+		dateField.setFont(new Font("Tahoma", Font.BOLD, 20));
 		add(dateField);
 		
 		//// FINAL ROW  //////////////////////////////
-		subBtn.setSize(273,155);
+		subBtn.setSize(195,130);
 		subBtn.setLocation(screenSize.width*26/30, screenSize.height*17/20);
 		subBtn.setFont(new Font("Tahoma", Font.BOLD, 30));
 		add(subBtn);

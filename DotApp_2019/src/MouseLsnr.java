@@ -26,7 +26,7 @@ public class MouseLsnr
 		else
 		{
 			mousePath = ".\\src\\CustomHand.png";
-			mousePath2 = ".\\src\\CustomHand`1.png";
+			mousePath2 = ".\\src\\CustomHand1.png";
 		}
 		Point hotspot = new Point(0, 0);
 		Image cursorImage2 = new ImageIcon(mousePath).getImage();
