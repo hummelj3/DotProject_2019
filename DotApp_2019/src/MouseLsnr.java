@@ -15,11 +15,23 @@ public class MouseLsnr
 	
 	public MouseLsnr(Container c)
 	{
+		String mousePath;
+		String mousePath2;
 		//custom cursor stuff
+		if(DotUIFrame.isExe == false)
+		{
+			mousePath = "C:\\Users\\Jeremy\\git\\repository\\DotApp_2019\\src\\CustomHand.png";
+			mousePath2 = "C:\\Users\\Jeremy\\git\\repository\\DotApp_2019\\src\\CustomHand1.png";
+		}
+		else
+		{
+			mousePath = ".\\src\\CustomHand.png";
+			mousePath2 = ".\\src\\CustomHand`1.png";
+		}
 		Point hotspot = new Point(0, 0);
-		Image cursorImage2 = new ImageIcon("C:\\Users\\Jeremy\\git\\repository\\DotApp_2019\\src\\CustomHand.png").getImage();
+		Image cursorImage2 = new ImageIcon(mousePath).getImage();
 		String cursorName2 = "CursorHand2";
-		Image cursorImage = new ImageIcon("C:\\Users\\Jeremy\\git\\repository\\DotApp_2019\\src\\CustomHand1.png").getImage();
+		Image cursorImage = new ImageIcon(mousePath2).getImage();
 		String cursorName = "CursorHand";
 
 		//making txt writer

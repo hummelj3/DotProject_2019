@@ -66,7 +66,7 @@ public class SpawnDot extends JPanel
 		int[] xy = random.randCoord(qspawn);
 		
 		//draws dot
-		g2.drawOval(xy[0],xy[1],10,10);
+		g2.fillOval(xy[0],xy[1],10,10);
 		
 		//if testing mode == true then print relevant info
 		if(DotUIFrame.testing == true)

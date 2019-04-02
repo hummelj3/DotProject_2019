@@ -29,9 +29,10 @@ public class TxtWriter
 		catch (IOException e) 
 		{
 		    //exception handling left as an exercise for the reader
+			System.out.println("error txtwrite");
 		}
 	}
-	public void txtWriter(int actCoordx, int actCoordy, int userX, int userY, int actQuad, int trial)
+	public void txtWriter(double actCoordx, double actCoordy, int userX, int userY, int actQuad, int trial)
 	{
 		try(FileWriter fw = new FileWriter("./Data/TestData.txt", true);
 	    BufferedWriter bw = new BufferedWriter(fw);
@@ -51,7 +52,7 @@ public class TxtWriter
 		    out.print(" | ");
 		    out.print("Actual Coord y: " + actCoordy);
 		    out.print(" | ");
-		    out.print("User Quadrant: " + info[0]);
+		    out.print("User Quadrant: " + (int)info[0]);
 		    out.print(" | ");
 		    out.print("User Coord x: " + userX);
 		    out.print(" | ");
@@ -82,7 +83,7 @@ public class TxtWriter
 	}
 	
 	//maths for data in txt doc
-	public double[] maths(int actCoordx, int actCoordy, int userX, int userY)
+	public double[] maths(double actCoordx, double actCoordy, int userX, int userY)
 	{
 		//0 place is quadrant
 		double[] info = {1,2,3,4,5,6,7,8};
@@ -102,25 +103,25 @@ public class TxtWriter
  		}
  		
  		//if quad 2 
- 		if(userX > centerX && userY < centerY)
+		else if(userX > centerX && userY < centerY)
  		{
  			info[0] = 2;
  		}
  		
  		//if quad 3
- 		if(userX < centerX && userY < centerY)
+		else if(userX < centerX && userY < centerY)
  		{
  			info[0] = 3;
  		}
  		
  		//if quad 4
- 		if(userX < centerX && userY > centerY)
+		else if(userX < centerX && userY > centerY)
  		{
  			info[0] = 4;
  		}
  		
  		//will only happen in testing
- 		if(userX == centerX && userY == centerY)
+		else if(userX == centerX && userY == centerY)
  		{
  			info[0] = 0;
  		}

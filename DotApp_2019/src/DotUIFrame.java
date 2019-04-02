@@ -33,17 +33,18 @@ public class DotUIFrame extends JFrame
 	private EnterCorrectInfoPopUp correctInfoQPop;
 	private EndOfDotClickHell theEnd;
 	private int input;
-	public static Boolean testing = true;
+	public static Boolean testing = false;
+	public static Boolean isExe = true;
 	public static int trialNum = 0;
 	public static int trackQuad1 = 20;
 	public static int trackQuad2 = 20;
 	public static int trackQuad3 = 20;
 	public static int trackQuad4 = 20;
-	public static double highAng = 0;
+	public static double highAng = -100;
 	public static double lowAng  = 100;
 	public static int quad;
-	public static int actX;
-	public static int actY;
+	public static double actX;
+	public static double actY;
 	
 	public DotUIFrame(String title)
 	{
