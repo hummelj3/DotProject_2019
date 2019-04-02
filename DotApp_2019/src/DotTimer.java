@@ -133,15 +133,14 @@ public class DotTimer
 					i = 0;
 					timer.setDelay(0);
 					
-					//if not in testing mode
-					if(DotUIFrame.testing != true)
-					{
-						//makes && calls MouseLsnr
-						mouseListen = new MouseLsnr(c);
-						
-						//stops timer
-						timer.stop();
-					}
+					//stops timer
+					timer.stop();
+					
+					//makes && calls MouseLsnr
+					mouseListen = new MouseLsnr(c);
+					
+					
+					
 				}
 				
 			}

@@ -26,10 +26,12 @@ public class DotUIFrame extends JFrame
 	private JTextArea txtArea;
 	private JButton introBtn;
 	private  DetailsPanel detailsPanel;
+	private MouseLsnr mouseListen;
 	private DotTimer timer;
 	private IntroPopUp introPopUp;
 	private ConfirmPopUp confirmPopUp;
 	private EnterCorrectInfoPopUp correctInfoQPop;
+	private EndOfDotClickHell theEnd;
 	private int input;
 	public static Boolean testing = true;
 	public static int trialNum = 0;
@@ -55,6 +57,9 @@ public class DotUIFrame extends JFrame
 		
 		//making a details panel
 		detailsPanel = new DetailsPanel();
+		
+		//making mouselistener 
+		//mouseListen = new MouseLsnr(c);
 		
 		//makes to where app closes on close
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -98,15 +103,14 @@ public class DotUIFrame extends JFrame
         });
 		
 		//TODO: Listens for last click in MouseLsnr
-		/*
-		MouseLsnr.addMouseLsnrListener(new MouseLsnrListener() 
-		{
-            public void mouseLsnrEventOccurred(mouseLsnrEvent event) 
-            {
-            	
-            }
-		}
-		*/
+		//mouseListen.addMouseLsnrListener(new MouseLsnrListener() 
+		//{
+			//public void MouseLsnrEventOccurred(MouseLsnrEvent event) 
+			//{
+				//after 80 trials give last pop-up so user can be over with this awfully dull dot clicking hell... 
+				//theEnd = new EndOfDotClickHell();
+			//}
+		//});
 		
 		//kill program on esc key press for testing, user will not be able to do this
 		if(testing == true)

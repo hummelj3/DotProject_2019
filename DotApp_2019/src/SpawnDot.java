@@ -39,21 +39,21 @@ public class SpawnDot extends JPanel
 				DotUIFrame.trackQuad1--;
 				enterIf = true;
 			}
-			if((randomQuad == 2) && DotUIFrame.trackQuad2 > 0)
+			else if((randomQuad == 2) && DotUIFrame.trackQuad2 > 0)
 			{
 				qspawn = randomQuad;
 				DotUIFrame.quad = 2;
 				DotUIFrame.trackQuad2--;
 				enterIf = true;
 			}
-			if((randomQuad == 3) && DotUIFrame.trackQuad3 > 0)
+			else if((randomQuad == 3) && DotUIFrame.trackQuad3 > 0)
 			{
 				qspawn = randomQuad;
 				DotUIFrame.quad = 3;
 				DotUIFrame.trackQuad3--;
 				enterIf = true;
 			}
-			if((randomQuad == 4) && DotUIFrame.trackQuad4 > 0)
+			else if((randomQuad == 4) && DotUIFrame.trackQuad4 > 0)
 			{
 				qspawn = randomQuad;
 				DotUIFrame.quad = 4;
@@ -75,6 +75,7 @@ public class SpawnDot extends JPanel
 			System.out.println("track num q1: " + DotUIFrame.trackQuad1 + " track num q2: " + DotUIFrame.trackQuad2);
 			System.out.println("track num q3: " + DotUIFrame.trackQuad3 + " track num q4: " + DotUIFrame.trackQuad4);
 			System.out.println("quadSpawn: " + qspawn);
+			System.out.println("");
 		}
 	}
 	

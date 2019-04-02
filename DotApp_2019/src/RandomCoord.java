@@ -37,36 +37,36 @@ public class RandomCoord
 				int w = screenSize.width;
 				int h = screenSize.height;
 				
-				//random distance from center of circle x
-				double min = .5*w;
-				double max = (.5*w) + rad;
-				double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
-				
-				//max and min values for y w/in quadrant 1:
+				//declaring variables here
 				double minY = 1;
 				double maxY = 0;
-				//max and min values for y w/in quadrant 1:
-				while(minY > maxY)
-				{
-					minY = (Math.tan( (50*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-					maxY = (Math.tan( (85*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-				}
-				
-				//random distance from center of circle y
-				double y = ThreadLocalRandom.current().nextDouble(minY - 1, maxY + 1);
-				
-				//max and min values for y w/in quadrant 1:
 				double minX = 1;
 				double maxX = 0;
-				//max and min values for y w/in quadrant 1:
-				while(minX > maxX)
+				double y = 0;
+				double x = 0;
+				double min = .5*w;
+				double max = (.5*w) + rad;
+				
+				//while min is less than max
+				while(minY > maxY || minX > maxX)
 				{
+					//random distance from center of circle x
+					double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
+					
+					//max and min values for y w/in quadrant 1:
+					minY = (Math.tan( (50*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+					maxY = (Math.tan( (85*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+					
+					//random distance from center of circle y
+					y = ThreadLocalRandom.current().nextDouble(minY - 1, maxY + 1);
+					
+					//max and min values for y w/in quadrant 1:
 					minX = ( (1/(Math.tan( (85*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
 					maxX = ( (1/(Math.tan( (50*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+					
+					//randomly choose value between max and min x
+					x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
 				}
-				
-				//randomly choose value between max and min x
-				double x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
 				
 				//calc angle
 				theta = Math.atan( (y - (.5*h)) / (x - (.5*w)) );
@@ -83,42 +83,45 @@ public class RandomCoord
 				}	
 			}
 			
-			//if q1 chosen
+			//if q2 chosen
 			else if(q == 2)
 			{
 				//screen dimensions 
 				int w = screenSize.width;
 				int h = screenSize.height;
 				
-				//random distance from center of circle x
+				//declaring variables here
 				double min = .5*w;
 				double max = (.5*w) + rad;
-				double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
-				
 				double minY = 1;
 				double maxY = 0;
-				//max and min values for y w/in quadrant 1:
-				while(minY > maxY)
-				{
-					minY = (Math.tan( (-40*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-					maxY = (Math.tan( (-5*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-				}
-				
-				//random distance from center of circle y
-				double y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
-
-				//max and min values for y w/in quadrant 1:
 				double minX = 1;
 				double maxX = 0;
-				while(minX > maxX)
+				double y = 0;
+				double x = 0;
+				
+				//max and min values for y w/in quadrant 1:
+				while(minY > maxY || minX > maxX)
 				{
+					//rand dist from center
+					double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
+					
+					//max and min values for y w/in quadrant 1:
+					minY = (Math.tan( (-40*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+					maxY = (Math.tan( (-5*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+				
+					//random distance from center of circle y
+					y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
+
+					//max and min values for y w/in quadrant 1:
 					minX = ( (1/(Math.tan( (-40*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
 					maxX = ( (1/(Math.tan( (-5*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+				
+				
+					//randomly choose value between max and min
+					x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
 				}
 				
-				//randomly choose value between max and min
-				double x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
-		
 				//calc angle
 				theta = Math.atan( (y - (.5*h)) / (x - (.5*w)) );
 				theta2 = theta;
@@ -134,43 +137,45 @@ public class RandomCoord
 				}	
 			}
 			
-			//if q1 chosen
+			//if q3 chosen
 			else if(q == 3)
 			{
 				//screen dimensions 
 				int w = screenSize.width;
 				int h = screenSize.height;
 				
-				//random distance from center of circle x
+				//declaring variables here
 				double min = (.5*w) - rad;
 				double max = (.5*w);
-				double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
-				
-				//max and min values for y w/in quadrant 1:
-				double minY = 1;
-				double maxY = 0;
-				//max and min values for y w/in quadrant 1:
-				while(minY > maxY)
-				{
-					minY = (Math.tan( (85*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-					maxY = (Math.tan( (50*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-				}
-				
-				//random distance from center of circle y
-				double y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
-				
-				//max and min values for y w/in quadrant 1:
 				double minX = 1;
 				double maxX = 0;
-				//max and min values for y w/in quadrant 1:
-				while(minX > maxX)
+				double minY = 1;
+				double maxY = 0;
+				double x = 0;
+				double y = 0;
+				
+				//while min > max
+				while(minY > maxY || maxX > maxX)
 				{
+					//random center
+					double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
+					
+					//max and min values for y w/in quadrant 1:
+					minY = (Math.tan( (85*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+					maxY = (Math.tan( (50*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+					
+					//random distance from center of circle y
+					y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
+					
+					//max and min values for y w/in quadrant 1:
 					minX = ( (1/(Math.tan( (50*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
 					maxX = ( (1/(Math.tan( (85*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+					
+					//randomly choose value between max and min
+					x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
 				}
 				
-				//randomly choose value between max and min
-				double x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
+				
 				
 				//calc angle
 				theta = Math.atan( (y - (.5*h)) / (x - (.5*w)) );
@@ -187,42 +192,43 @@ public class RandomCoord
 				}	
 			}
 			
-			//if q1 chosen
+			//if q4 chosen
 			else if(q == 4)
 			{
 				//screen dimensions 
 				int w = screenSize.width;
 				int h = screenSize.height;
 				
-				//random distance from center of circle x
+				//declaring variables here
 				double min = (.5*w) - rad;
 				double max = (.5*w);
-				double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
-
-				//max and min values for y w/in quadrant 1:
 				double minY = 1;
 				double maxY = 0;
-				//max and min values for y w/in quadrant 1:
-				while(minY > maxY)
-				{
-					minY = (Math.tan( (-5*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-					maxY = (Math.tan( (-40*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-				}
-				//random distance from center of circle y
-				double y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
-
-				//max and min values for y w/in quadrant 1:
 				double minX = 1;
 				double maxX = 0;
-				//max and min values for y w/in quadrant 1:
-				while(minX > maxX)
+				double x = 0;
+				double y = 0;
+				
+				//while min > max
+				while(minY > maxY || minX > maxX)
 				{
+					//rand dist
+					double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
+					
+					//max and min values for y w/in quadrant 1:
+					minY = (Math.tan( (-5*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+					maxY = (Math.tan( (-40*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+				
+					//random distance from center of circle y
+					y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
+					
+					//max and min values for y w/in quadrant 1:
 					minX = ( (1/(Math.tan( (-5*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
 					maxX = ( (1/(Math.tan( (-40*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+					
+					//randomly choose value between max and min
+					x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
 				}
-			
-				//randomly choose value between max and min
-				double x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
 
 				//calc angle
 				theta = Math.atan( (y - (.5*h)) / (x - (.5*w)) );
@@ -251,12 +257,6 @@ public class RandomCoord
 			if(theta2 < DotUIFrame.lowAng)
 			{
 				DotUIFrame.lowAng = theta2;
-			}
-			if(DotUIFrame.trialNum == 80)
-			{
-				System.out.println("Act dot highest angle: " + DotUIFrame.highAng);
-				System.out.println("Act dot lowest angle: " + DotUIFrame.lowAng);
-				System.exit(0);
 			}
 		}
 		

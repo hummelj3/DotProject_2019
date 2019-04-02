@@ -21,8 +21,8 @@ public class TxtWriter
 		    out.println("User dominant hand:         " + hand);
 		    out.println("Date :                      " + date);
 		    out.println("Width and Height of Screen: " + screen.width + ", " + screen.height);
-		    out.println("Center of Circle X: " + screen.width);
-		    out.println("Center of Circle Y: " + screen.height);
+		    out.println("Center of Circle X:         " + screen.width/2);
+		    out.println("Center of Circle Y:         " + screen.height/2);
 		    out.println("\n");
 		    
 		} 

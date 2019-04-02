@@ -10,7 +10,8 @@ import javax.swing.event.EventListenerList;
 public class MouseLsnr
 {
 	private TxtWriter txtWriter;
-	private EventListenerList listenerList = new EventListenerList();
+	private EndOfDotClickHell theEnd;
+	//private EventListenerList listenerList = new EventListenerList();
 	
 	public MouseLsnr(Container c)
 	{
@@ -24,58 +25,73 @@ public class MouseLsnr
 		//making txt writer
 		txtWriter = new TxtWriter();
 		
-		//mouse listener
-		c.addMouseListener(new MouseAdapter()
+		//if testing mode on...
+		if(DotUIFrame.testing == true)
 		{
-			
-			 //mouse pressed
-		     public void mousePressed(MouseEvent e) 
-		     {
-		    	 //testing
-		    	 if(DotUIFrame.testing == true)
-		    	 {
-			    	 System.out.println("click");
-			    	 System.out.println(e.getX());
-			    	 System.out.println(e.getY());
-		    	 }
-		    	 
-		    	 //set to custom clicked cursor
-		    	 c.setCursor(c.getToolkit().createCustomCursor(cursorImage2, hotspot, cursorName2));   
-		    	
-		    	 //TODO: send data to txt doc
-		    	 txtWriter.txtWriter(DotUIFrame.actX, DotUIFrame.actY, e.getX(), e.getY(), DotUIFrame.quad, DotUIFrame.trialNum);
-		     }
-		     //mouse released
-		     public void mouseReleased(MouseEvent e)
-		     {
-		    	//set cursor to regular
-		    	 c.setCursor(c.getToolkit().createCustomCursor(cursorImage, hotspot, cursorName));
-		    	 
-		    	 //if 80 trials gone by...
-		    	 if(DotUIFrame.trialNum == 80)
-		    	 {
-		    		//TODO: fire action event to signal dot ui frame to bring up ending dialog so user can be done with this nightmare
-		    		 fireMouseLsnrEvent(new MouseLsnrEvent(this));
-		    	 }
-		    	 
-		    	 else
-		    	 {
-			    	 //testing
-			    	 if(DotUIFrame.testing == true)
+			//if 80 trials gone by...
+	    	 if(DotUIFrame.trialNum == 80)
+	    	 {
+	    		 System.out.println("event fired");
+	    		 System.out.println("Act dot highest angle: " + DotUIFrame.highAng);
+				 System.out.println("Act dot lowest angle: " + DotUIFrame.lowAng);
+				 //send data to txt doc
+		    	 txtWriter.txtWriter(DotUIFrame.actX, DotUIFrame.actY,0, 0, DotUIFrame.quad, DotUIFrame.trialNum);
+	    		 //bring up ending dialog so user can be done with this nightmare
+	    		 theEnd = new EndOfDotClickHell();
+	    	 }
+	    	 else
+	    	 {
+	    		 //send data to txt doc
+		    	 txtWriter.txtWriter(DotUIFrame.actX, DotUIFrame.actY, 0, 0, DotUIFrame.quad, DotUIFrame.trialNum);
+	    		 //restart timer
+		    	 DotTimer.timerRestart();
+	    	 }
+		}
+		
+		//if testing mode is off
+		if(DotUIFrame.testing != true)
+		{
+			//mouse listener
+			c.addMouseListener(new MouseAdapter()
+			{
+				 //mouse pressed
+			     public void mousePressed(MouseEvent e) 
+			     {
+			    	 
+			    	 //set to custom clicked cursor
+			    	 c.setCursor(c.getToolkit().createCustomCursor(cursorImage2, hotspot, cursorName2));   
+			    	
+			    	 //send data to txt doc
+			    	 txtWriter.txtWriter(DotUIFrame.actX, DotUIFrame.actY, e.getX(), e.getY(), DotUIFrame.quad, DotUIFrame.trialNum);
+			     }
+			     //mouse released
+			     public void mouseReleased(MouseEvent e)
+			     {
+			    	//set cursor to regular
+			    	 c.setCursor(c.getToolkit().createCustomCursor(cursorImage, hotspot, cursorName));
+			    	 
+			    	 //if 80 trials gone by...
+			    	 if(DotUIFrame.trialNum == 80)
 			    	 {
-			    		 System.out.println("unclick");
+			    		//bring up ending dialog so user can be done with this nightmare
+			    		 theEnd = new EndOfDotClickHell();
 			    	 }
 			    	 
-			    	 //restart timer
-			    	 DotTimer.timerRestart();
-		    	 }
-		    	 
-		    	 //remove this listener at end of code so I don't make multiple listeners
-		    	 c.removeMouseListener(this);
-		     }
-		});
+			    	 else
+			    	 {
+				    	 //restart timer
+				    	 DotTimer.timerRestart();
+			    	 }
+			    	 
+			    	 //remove this listener at end of code so I don't make multiple listeners
+			    	 c.removeMouseListener(this);
+			     }
+			});
+		
+		}
 	}
 	
+	/*
 	public void fireMouseLsnrEvent(MouseLsnrEvent event) 
     {
         Object[] listeners = listenerList.getListenerList();
@@ -98,4 +114,5 @@ public class MouseLsnr
     {
         listenerList.remove(MouseLsnrListener.class, listener);
     }
+    */
 }
