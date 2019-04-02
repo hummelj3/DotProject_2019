@@ -171,3 +171,345 @@ trial Number: 80 | Actual Quadrant: 4 | Actual Coord x: 1310 | Actual Coord y: 1
 
 
 
+User Data :
+Assigned Num:               
+User Gender:                
+User age:                   
+User dominant hand:         
+Date :                      
+Width and Height of Screen: 3000, 2000
+Center of Circle X:         1500
+Center of Circle Y:         1000
+
+
+trial Number: 1 | Actual Quadrant: 2 | Actual Coord x: 1819 | Actual Coord y: 971 | User Quadrant: 2 | User Coord x: 1841 | User Coord y: 963
+
+trial Number: 2 | Actual Quadrant: 4 | Actual Coord x: 1391 | Actual Coord y: 1028 | User Quadrant: 4 | User Coord x: 1240 | User Coord y: 1071
+
+trial Number: 3 | Actual Quadrant: 4 | Actual Coord x: 1378 | Actual Coord y: 1045 | User Quadrant: 4 | User Coord x: 1368 | User Coord y: 1064
+
+trial Number: 4 | Actual Quadrant: 1 | Actual Coord x: 1517 | Actual Coord y: 1023 | User Quadrant: 1 | User Coord x: 1564 | User Coord y: 1013
+
+trial Number: 5 | Actual Quadrant: 3 | Actual Coord x: 1356 | Actual Coord y: 684 | User Quadrant: 3 | User Coord x: 1468 | User Coord y: 995
+
+trial Number: 6 | Actual Quadrant: 2 | Actual Coord x: 1356 | Actual Coord y: 684 | User Quadrant: 3 | User Coord x: 1475 | User Coord y: 982
+
+trial Number: 7 | Actual Quadrant: 1 | Actual Coord x: 1568 | Actual Coord y: 1381 | User Quadrant: 2 | User Coord x: 1546 | User Coord y: 977
+
+trial Number: 8 | Actual Quadrant: 4 | Actual Coord x: 1212 | Actual Coord y: 1035 | User Quadrant: 3 | User Coord x: 1480 | User Coord y: 975
+
+trial Number: 9 | Actual Quadrant: 4 | Actual Coord x: 1253 | Actual Coord y: 1045 | User Quadrant: 2 | User Coord x: 1679 | User Coord y: 873
+
+trial Number: 10 | Actual Quadrant: 1 | Actual Coord x: 1519 | Actual Coord y: 1130 | User Quadrant: 2 | User Coord x: 1679 | User Coord y: 873
+
+trial Number: 11 | Actual Quadrant: 1 | Actual Coord x: 1633 | Actual Coord y: 1240 | User Quadrant: 2 | User Coord x: 1679 | User Coord y: 873
+
+trial Number: 12 | Actual Quadrant: 1 | Actual Coord x: 1521 | Actual Coord y: 1082 | User Quadrant: 2 | User Coord x: 1679 | User Coord y: 873
+
+trial Number: 13 | Actual Quadrant: 4 | Actual Coord x: 1324 | Actual Coord y: 1070 | User Quadrant: 2 | User Coord x: 1679 | User Coord y: 873
+
+trial Number: 14 | Actual Quadrant: 4 | Actual Coord x: 1337 | Actual Coord y: 1017 | User Quadrant: 2 | User Coord x: 1679 | User Coord y: 873
+
+trial Number: 15 | Actual Quadrant: 4 | Actual Coord x: 1483 | Actual Coord y: 1003 | User Quadrant: 2 | User Coord x: 1679 | User Coord y: 873
+
+trial Number: 16 | Actual Quadrant: 1 | Actual Coord x: 1558 | Actual Coord y: 1186 | User Quadrant: 2 | User Coord x: 1679 | User Coord y: 873
+
+trial Number: 17 | Actual Quadrant: 1 | Actual Coord x: 1518 | Actual Coord y: 1158 | User Quadrant: 2 | User Coord x: 1679 | User Coord y: 873
+
+trial Number: 18 | Actual Quadrant: 1 | Actual Coord x: 1584 | Actual Coord y: 1105 | User Quadrant: 2 | User Coord x: 1552 | User Coord y: 990
+
+trial Number: 19 | Actual Quadrant: 4 | Actual Coord x: 1227 | Actual Coord y: 1052 | User Quadrant: 4 | User Coord x: 1229 | User Coord y: 1040
+
+trial Number: 20 | Actual Quadrant: 4 | Actual Coord x: 1446 | Actual Coord y: 1036 | User Quadrant: 4 | User Coord x: 1488 | User Coord y: 1034
+
+trial Number: 21 | Actual Quadrant: 2 | Actual Coord x: 1884 | Actual Coord y: 953 | User Quadrant: 2 | User Coord x: 1849 | User Coord y: 942
+
+trial Number: 22 | Actual Quadrant: 4 | Actual Coord x: 1339 | Actual Coord y: 1018 | User Quadrant: 4 | User Coord x: 1260 | User Coord y: 1029
+
+trial Number: 23 | Actual Quadrant: 3 | Actual Coord x: 1373 | Actual Coord y: 760 | User Quadrant: 3 | User Coord x: 1410 | User Coord y: 717
+
+trial Number: 24 | Actual Quadrant: 1 | Actual Coord x: 1625 | Actual Coord y: 1153 | User Quadrant: 3 | User Coord x: 1410 | User Coord y: 717
+
+trial Number: 25 | Actual Quadrant: 2 | Actual Coord x: 1841 | Actual Coord y: 946 | User Quadrant: 3 | User Coord x: 1287 | User Coord y: 745
+
+trial Number: 26 | Actual Quadrant: 1 | Actual Coord x: 1531 | Actual Coord y: 1125 | User Quadrant: 4 | User Coord x: 1491 | User Coord y: 1060
+
+trial Number: 27 | Actual Quadrant: 2 | Actual Coord x: 1699 | Actual Coord y: 960 | User Quadrant: 4 | User Coord x: 1496 | User Coord y: 1010
+
+trial Number: 28 | Actual Quadrant: 1 | Actual Coord x: 1600 | Actual Coord y: 1371 | User Quadrant: 4 | User Coord x: 1496 | User Coord y: 1010
+
+trial Number: 29 | Actual Quadrant: 1 | Actual Coord x: 1538 | Actual Coord y: 1259 | User Quadrant: 4 | User Coord x: 1496 | User Coord y: 1010
+
+trial Number: 30 | Actual Quadrant: 3 | Actual Coord x: 1492 | Actual Coord y: 984 | User Quadrant: 4 | User Coord x: 1496 | User Coord y: 1010
+
+trial Number: 31 | Actual Quadrant: 3 | Actual Coord x: 1366 | Actual Coord y: 816 | User Quadrant: 2 | User Coord x: 1554 | User Coord y: 962
+
+trial Number: 32 | Actual Quadrant: 4 | Actual Coord x: 1282 | Actual Coord y: 1035 | User Quadrant: 2 | User Coord x: 1554 | User Coord y: 962
+
+trial Number: 33 | Actual Quadrant: 1 | Actual Coord x: 1510 | Actual Coord y: 1072 | User Quadrant: 2 | User Coord x: 1554 | User Coord y: 962
+
+trial Number: 34 | Actual Quadrant: 1 | Actual Coord x: 1561 | Actual Coord y: 1213 | User Quadrant: 3 | User Coord x: 1346 | User Coord y: 906
+
+trial Number: 35 | Actual Quadrant: 1 | Actual Coord x: 1512 | Actual Coord y: 1027 | User Quadrant: 1 | User Coord x: 1527 | User Coord y: 1032
+
+trial Number: 36 | Actual Quadrant: 1 | Actual Coord x: 1534 | Actual Coord y: 1108 | User Quadrant: 2 | User Coord x: 1529 | User Coord y: 968
+
+trial Number: 37 | Actual Quadrant: 3 | Actual Coord x: 1398 | Actual Coord y: 812 | User Quadrant: 3 | User Coord x: 1360 | User Coord y: 765
+
+trial Number: 38 | Actual Quadrant: 4 | Actual Coord x: 1144 | Actual Coord y: 1035 | User Quadrant: 2 | User Coord x: 1524 | User Coord y: 860
+
+trial Number: 39 | Actual Quadrant: 1 | Actual Coord x: 1522 | Actual Coord y: 1255 | User Quadrant: 4 | User Coord x: 1480 | User Coord y: 1112
+
+trial Number: 40 | Actual Quadrant: 2 | Actual Coord x: 1850 | Actual Coord y: 938 | User Quadrant: 2 | User Coord x: 1847 | User Coord y: 960
+
+trial Number: 41 | Actual Quadrant: 2 | Actual Coord x: 1812 | Actual Coord y: 945 | User Quadrant: 1 | User Coord x: 1848 | User Coord y: 1028
+
+trial Number: 42 | Actual Quadrant: 3 | Actual Coord x: 1401 | Actual Coord y: 827 | User Quadrant: 3 | User Coord x: 1275 | User Coord y: 825
+
+trial Number: 43 | Actual Quadrant: 3 | Actual Coord x: 1479 | Actual Coord y: 966 | User Quadrant: 3 | User Coord x: 1355 | User Coord y: 957
+
+trial Number: 44 | Actual Quadrant: 4 | Actual Coord x: 1265 | Actual Coord y: 1040 | User Quadrant: 4 | User Coord x: 1175 | User Coord y: 1124
+
+trial Number: 45 | Actual Quadrant: 3 | Actual Coord x: 1369 | Actual Coord y: 826 | User Quadrant: 4 | User Coord x: 1245 | User Coord y: 1034
+
+trial Number: 46 | Actual Quadrant: 4 | Actual Coord x: 1433 | Actual Coord y: 1006 | User Quadrant: 4 | User Coord x: 1309 | User Coord y: 1061
+
+trial Number: 47 | Actual Quadrant: 4 | Actual Coord x: 1134 | Actual Coord y: 1041 | User Quadrant: 2 | User Coord x: 1754 | User Coord y: 964
+
+trial Number: 48 | Actual Quadrant: 1 | Actual Coord x: 1528 | Actual Coord y: 1059 | User Quadrant: 4 | User Coord x: 1474 | User Coord y: 1115
+
+trial Number: 49 | Actual Quadrant: 4 | Actual Coord x: 1449 | Actual Coord y: 1036 | User Quadrant: 4 | User Coord x: 1452 | User Coord y: 1099
+
+trial Number: 50 | Actual Quadrant: 3 | Actual Coord x: 1363 | Actual Coord y: 804 | User Quadrant: 3 | User Coord x: 1323 | User Coord y: 789
+
+trial Number: 51 | Actual Quadrant: 3 | Actual Coord x: 1496 | Actual Coord y: 994 | User Quadrant: 1 | User Coord x: 1527 | User Coord y: 1164
+
+trial Number: 52 | Actual Quadrant: 3 | Actual Coord x: 1323 | Actual Coord y: 774 | User Quadrant: 3 | User Coord x: 1295 | User Coord y: 753
+
+trial Number: 53 | Actual Quadrant: 2 | Actual Coord x: 1832 | Actual Coord y: 964 | User Quadrant: 2 | User Coord x: 1816 | User Coord y: 994
+
+trial Number: 54 | Actual Quadrant: 2 | Actual Coord x: 1647 | Actual Coord y: 892 | User Quadrant: 2 | User Coord x: 1579 | User Coord y: 983
+
+trial Number: 55 | Actual Quadrant: 3 | Actual Coord x: 1478 | Actual Coord y: 908 | User Quadrant: 3 | User Coord x: 1440 | User Coord y: 899
+
+trial Number: 56 | Actual Quadrant: 4 | Actual Coord x: 1192 | Actual Coord y: 1060 | User Quadrant: 4 | User Coord x: 1173 | User Coord y: 1095
+
+trial Number: 57 | Actual Quadrant: 4 | Actual Coord x: 1195 | Actual Coord y: 1046 | User Quadrant: 4 | User Coord x: 1169 | User Coord y: 1072
+
+trial Number: 58 | Actual Quadrant: 3 | Actual Coord x: 1432 | Actual Coord y: 728 | User Quadrant: 3 | User Coord x: 1428 | User Coord y: 683
+
+trial Number: 59 | Actual Quadrant: 2 | Actual Coord x: 1784 | Actual Coord y: 956 | User Quadrant: 2 | User Coord x: 1767 | User Coord y: 931
+
+trial Number: 60 | Actual Quadrant: 1 | Actual Coord x: 1578 | Actual Coord y: 1196 | User Quadrant: 2 | User Coord x: 1650 | User Coord y: 971
+
+trial Number: 61 | Actual Quadrant: 2 | Actual Coord x: 1842 | Actual Coord y: 955 | User Quadrant: 2 | User Coord x: 1841 | User Coord y: 980
+
+trial Number: 62 | Actual Quadrant: 2 | Actual Coord x: 1628 | Actual Coord y: 985 | User Quadrant: 2 | User Coord x: 1591 | User Coord y: 964
+
+trial Number: 63 | Actual Quadrant: 1 | Actual Coord x: 1578 | Actual Coord y: 1145 | User Quadrant: 1 | User Coord x: 1601 | User Coord y: 1159
+
+trial Number: 64 | Actual Quadrant: 4 | Actual Coord x: 1374 | Actual Coord y: 1040 | User Quadrant: 4 | User Coord x: 1343 | User Coord y: 1007
+
+trial Number: 65 | Actual Quadrant: 3 | Actual Coord x: 1445 | Actual Coord y: 920 | User Quadrant: 3 | User Coord x: 1421 | User Coord y: 893
+
+trial Number: 66 | Actual Quadrant: 3 | Actual Coord x: 1457 | Actual Coord y: 893 | User Quadrant: 3 | User Coord x: 1438 | User Coord y: 858
+
+trial Number: 67 | Actual Quadrant: 4 | Actual Coord x: 1342 | Actual Coord y: 1014 | User Quadrant: 3 | User Coord x: 1438 | User Coord y: 858
+
+trial Number: 68 | Actual Quadrant: 2 | Actual Coord x: 1792 | Actual Coord y: 843 | User Quadrant: 2 | User Coord x: 1765 | User Coord y: 828
+
+trial Number: 69 | Actual Quadrant: 2 | Actual Coord x: 1665 | Actual Coord y: 975 | User Quadrant: 1 | User Coord x: 1617 | User Coord y: 1026
+
+trial Number: 70 | Actual Quadrant: 3 | Actual Coord x: 1421 | Actual Coord y: 838 | User Quadrant: 3 | User Coord x: 1357 | User Coord y: 871
+
+trial Number: 71 | Actual Quadrant: 3 | Actual Coord x: 1421 | Actual Coord y: 838 | User Quadrant: 3 | User Coord x: 1357 | User Coord y: 871
+
+trial Number: 72 | Actual Quadrant: 2 | Actual Coord x: 1672 | Actual Coord y: 892 | User Quadrant: 2 | User Coord x: 1664 | User Coord y: 881
+
+trial Number: 73 | Actual Quadrant: 2 | Actual Coord x: 1761 | Actual Coord y: 890 | User Quadrant: 2 | User Coord x: 1740 | User Coord y: 894
+
+trial Number: 74 | Actual Quadrant: 3 | Actual Coord x: 1761 | Actual Coord y: 890 | User Quadrant: 4 | User Coord x: 1217 | User Coord y: 1090
+
+trial Number: 75 | Actual Quadrant: 3 | Actual Coord x: 1412 | Actual Coord y: 764 | User Quadrant: 3 | User Coord x: 1395 | User Coord y: 735
+
+trial Number: 76 | Actual Quadrant: 3 | Actual Coord x: 1421 | Actual Coord y: 893 | User Quadrant: 3 | User Coord x: 1407 | User Coord y: 935
+
+trial Number: 77 | Actual Quadrant: 2 | Actual Coord x: 1421 | Actual Coord y: 893 | User Quadrant: 3 | User Coord x: 1407 | User Coord y: 935
+
+trial Number: 78 | Actual Quadrant: 2 | Actual Coord x: 1559 | Actual Coord y: 985 | User Quadrant: 1 | User Coord x: 1557 | User Coord y: 1014
+
+trial Number: 79 | Actual Quadrant: 2 | Actual Coord x: 1618 | Actual Coord y: 968 | User Quadrant: 2 | User Coord x: 1612 | User Coord y: 951
+
+trial Number: 80 | Actual Quadrant: 2 | Actual Coord x: 1758 | Actual Coord y: 959 | User Quadrant: 2 | User Coord x: 1767 | User Coord y: 972
+
+User Data :
+Assigned Num:               Test2
+User Gender:                DudeMan
+User age:                   20
+User dominant hand:         Righty Tighty Baby
+Date :                      04/01/19
+Width and Height of Screen: 3000, 2000
+Center of Circle X:         1500
+Center of Circle Y:         1000
+
+
+trial Number: 1 | Actual Quadrant: 1 | Actual Coord x: 1547 | Actual Coord y: 1083 | User Quadrant: 1 | User Coord x: 1560 | User Coord y: 1097
+
+trial Number: 2 | Actual Quadrant: 4 | Actual Coord x: 1274 | Actual Coord y: 1116 | User Quadrant: 4 | User Coord x: 1240 | User Coord y: 1138
+
+trial Number: 3 | Actual Quadrant: 1 | Actual Coord x: 1606 | Actual Coord y: 1186 | User Quadrant: 1 | User Coord x: 1626 | User Coord y: 1212
+
+trial Number: 4 | Actual Quadrant: 4 | Actual Coord x: 1336 | Actual Coord y: 1131 | User Quadrant: 4 | User Coord x: 1280 | User Coord y: 1156
+
+trial Number: 5 | Actual Quadrant: 4 | Actual Coord x: 1381 | Actual Coord y: 1023 | User Quadrant: 4 | User Coord x: 1382 | User Coord y: 1006
+
+trial Number: 6 | Actual Quadrant: 3 | Actual Coord x: 1400 | Actual Coord y: 782 | User Quadrant: 3 | User Coord x: 1395 | User Coord y: 751
+
+trial Number: 7 | Actual Quadrant: 3 | Actual Coord x: 1282 | Actual Coord y: 735 | User Quadrant: 3 | User Coord x: 1254 | User Coord y: 727
+
+trial Number: 8 | Actual Quadrant: 4 | Actual Coord x: 1486 | Actual Coord y: 1002 | User Quadrant: 1 | User Coord x: 1564 | User Coord y: 1139
+
+trial Number: 9 | Actual Quadrant: 1 | Actual Coord x: 1512 | Actual Coord y: 1024 | User Quadrant: 1 | User Coord x: 1509 | User Coord y: 1014
+
+trial Number: 10 | Actual Quadrant: 2 | Actual Coord x: 1550 | Actual Coord y: 982 | User Quadrant: 1 | User Coord x: 1526 | User Coord y: 1159
+
+trial Number: 11 | Actual Quadrant: 1 | Actual Coord x: 1525 | Actual Coord y: 1105 | User Quadrant: 2 | User Coord x: 1585 | User Coord y: 851
+
+trial Number: 12 | Actual Quadrant: 2 | Actual Coord x: 1500 | Actual Coord y: 999 | User Quadrant: 3 | User Coord x: 1308 | User Coord y: 798
+
+trial Number: 13 | Actual Quadrant: 3 | Actual Coord x: 1500 | Actual Coord y: 997 | User Quadrant: 4 | User Coord x: 1304 | User Coord y: 1103
+
+trial Number: 14 | Actual Quadrant: 2 | Actual Coord x: 1822 | Actual Coord y: 952 | User Quadrant: 2 | User Coord x: 1812 | User Coord y: 934
+
+trial Number: 15 | Actual Quadrant: 4 | Actual Coord x: 1164 | Actual Coord y: 1165 | User Quadrant: 4 | User Coord x: 1172 | User Coord y: 1169
+
+trial Number: 16 | Actual Quadrant: 1 | Actual Coord x: 1592 | Actual Coord y: 1157 | User Quadrant: 1 | User Coord x: 1678 | User Coord y: 1195
+
+trial Number: 17 | Actual Quadrant: 1 | Actual Coord x: 1515 | Actual Coord y: 1102 | User Quadrant: 1 | User Coord x: 1532 | User Coord y: 1077
+
+trial Number: 18 | Actual Quadrant: 3 | Actual Coord x: 1392 | Actual Coord y: 861 | User Quadrant: 3 | User Coord x: 1352 | User Coord y: 823
+
+trial Number: 19 | Actual Quadrant: 1 | Actual Coord x: 1575 | Actual Coord y: 1280 | User Quadrant: 1 | User Coord x: 1589 | User Coord y: 1319
+
+trial Number: 20 | Actual Quadrant: 1 | Actual Coord x: 1607 | Actual Coord y: 1228 | User Quadrant: 1 | User Coord x: 1581 | User Coord y: 1217
+
+trial Number: 21 | Actual Quadrant: 1 | Actual Coord x: 1533 | Actual Coord y: 1195 | User Quadrant: 1 | User Coord x: 1546 | User Coord y: 1148
+
+trial Number: 22 | Actual Quadrant: 4 | Actual Coord x: 1316 | Actual Coord y: 1048 | User Quadrant: 4 | User Coord x: 1293 | User Coord y: 1028
+
+trial Number: 23 | Actual Quadrant: 4 | Actual Coord x: 1458 | Actual Coord y: 1006 | User Quadrant: 4 | User Coord x: 1417 | User Coord y: 1101
+
+trial Number: 24 | Actual Quadrant: 2 | Actual Coord x: 1884 | Actual Coord y: 942 | User Quadrant: 2 | User Coord x: 1865 | User Coord y: 943
+
+trial Number: 25 | Actual Quadrant: 1 | Actual Coord x: 1700 | Actual Coord y: 1237 | User Quadrant: 1 | User Coord x: 1682 | User Coord y: 1242
+
+trial Number: 26 | Actual Quadrant: 1 | Actual Coord x: 1522 | Actual Coord y: 1084 | User Quadrant: 1 | User Coord x: 1505 | User Coord y: 1092
+
+trial Number: 27 | Actual Quadrant: 3 | Actual Coord x: 1481 | Actual Coord y: 852 | User Quadrant: 3 | User Coord x: 1451 | User Coord y: 931
+
+trial Number: 28 | Actual Quadrant: 3 | Actual Coord x: 1479 | Actual Coord y: 781 | User Quadrant: 3 | User Coord x: 1453 | User Coord y: 821
+
+trial Number: 29 | Actual Quadrant: 1 | Actual Coord x: 1559 | Actual Coord y: 1080 | User Quadrant: 1 | User Coord x: 1555 | User Coord y: 1098
+
+trial Number: 30 | Actual Quadrant: 2 | Actual Coord x: 1831 | Actual Coord y: 967 | User Quadrant: 2 | User Coord x: 1828 | User Coord y: 940
+
+trial Number: 31 | Actual Quadrant: 4 | Actual Coord x: 1354 | Actual Coord y: 1029 | User Quadrant: 4 | User Coord x: 1199 | User Coord y: 1103
+
+trial Number: 32 | Actual Quadrant: 1 | Actual Coord x: 1614 | Actual Coord y: 1200 | User Quadrant: 4 | User Coord x: 1199 | User Coord y: 1103
+
+trial Number: 33 | Actual Quadrant: 3 | Actual Coord x: 1433 | Actual Coord y: 858 | User Quadrant: 3 | User Coord x: 1441 | User Coord y: 817
+
+trial Number: 34 | Actual Quadrant: 1 | Actual Coord x: 1523 | Actual Coord y: 1138 | User Quadrant: 1 | User Coord x: 1601 | User Coord y: 1220
+
+trial Number: 35 | Actual Quadrant: 2 | Actual Coord x: 1803 | Actual Coord y: 950 | User Quadrant: 2 | User Coord x: 1532 | User Coord y: 983
+
+trial Number: 36 | Actual Quadrant: 3 | Actual Coord x: 1457 | Actual Coord y: 922 | User Quadrant: 2 | User Coord x: 1532 | User Coord y: 983
+
+trial Number: 37 | Actual Quadrant: 3 | Actual Coord x: 1412 | Actual Coord y: 746 | User Quadrant: 3 | User Coord x: 1382 | User Coord y: 699
+
+trial Number: 38 | Actual Quadrant: 2 | Actual Coord x: 1527 | Actual Coord y: 981 | User Quadrant: 1 | User Coord x: 1554 | User Coord y: 1016
+
+trial Number: 39 | Actual Quadrant: 3 | Actual Coord x: 1448 | Actual Coord y: 769 | User Quadrant: 1 | User Coord x: 1554 | User Coord y: 1016
+
+trial Number: 40 | Actual Quadrant: 2 | Actual Coord x: 1751 | Actual Coord y: 942 | User Quadrant: 2 | User Coord x: 1755 | User Coord y: 936
+
+trial Number: 41 | Actual Quadrant: 2 | Actual Coord x: 1797 | Actual Coord y: 967 | User Quadrant: 2 | User Coord x: 1784 | User Coord y: 969
+
+trial Number: 42 | Actual Quadrant: 3 | Actual Coord x: 1474 | Actual Coord y: 733 | User Quadrant: 3 | User Coord x: 1455 | User Coord y: 747
+
+trial Number: 43 | Actual Quadrant: 1 | Actual Coord x: 1545 | Actual Coord y: 1123 | User Quadrant: 1 | User Coord x: 1552 | User Coord y: 1195
+
+trial Number: 44 | Actual Quadrant: 2 | Actual Coord x: 1602 | Actual Coord y: 928 | User Quadrant: 2 | User Coord x: 1613 | User Coord y: 914
+
+trial Number: 45 | Actual Quadrant: 2 | Actual Coord x: 1658 | Actual Coord y: 982 | User Quadrant: 2 | User Coord x: 1658 | User Coord y: 979
+
+trial Number: 46 | Actual Quadrant: 4 | Actual Coord x: 1123 | Actual Coord y: 1045 | User Quadrant: 3 | User Coord x: 1414 | User Coord y: 989
+
+trial Number: 47 | Actual Quadrant: 4 | Actual Coord x: 1418 | Actual Coord y: 1048 | User Quadrant: 4 | User Coord x: 1382 | User Coord y: 1050
+
+trial Number: 48 | Actual Quadrant: 2 | Actual Coord x: 1667 | Actual Coord y: 976 | User Quadrant: 3 | User Coord x: 1382 | User Coord y: 842
+
+trial Number: 49 | Actual Quadrant: 3 | Actual Coord x: 1412 | Actual Coord y: 698 | User Quadrant: 3 | User Coord x: 1410 | User Coord y: 704
+
+trial Number: 50 | Actual Quadrant: 4 | Actual Coord x: 1395 | Actual Coord y: 1017 | User Quadrant: 4 | User Coord x: 1373 | User Coord y: 1022
+
+trial Number: 51 | Actual Quadrant: 4 | Actual Coord x: 1396 | Actual Coord y: 1033 | User Quadrant: 2 | User Coord x: 1672 | User Coord y: 853
+
+trial Number: 52 | Actual Quadrant: 1 | Actual Coord x: 1597 | Actual Coord y: 1181 | User Quadrant: 1 | User Coord x: 1592 | User Coord y: 1217
+
+trial Number: 53 | Actual Quadrant: 1 | Actual Coord x: 1589 | Actual Coord y: 1126 | User Quadrant: 1 | User Coord x: 1561 | User Coord y: 1149
+
+trial Number: 54 | Actual Quadrant: 3 | Actual Coord x: 1476 | Actual Coord y: 847 | User Quadrant: 3 | User Coord x: 1437 | User Coord y: 811
+
+trial Number: 55 | Actual Quadrant: 2 | Actual Coord x: 1788 | Actual Coord y: 969 | User Quadrant: 2 | User Coord x: 1804 | User Coord y: 958
+
+trial Number: 56 | Actual Quadrant: 1 | Actual Coord x: 1583 | Actual Coord y: 1259 | User Quadrant: 1 | User Coord x: 1521 | User Coord y: 1298
+
+trial Number: 57 | Actual Quadrant: 2 | Actual Coord x: 1698 | Actual Coord y: 930 | User Quadrant: 2 | User Coord x: 1685 | User Coord y: 915
+
+trial Number: 58 | Actual Quadrant: 1 | Actual Coord x: 1567 | Actual Coord y: 1143 | User Quadrant: 1 | User Coord x: 1574 | User Coord y: 1184
+
+trial Number: 59 | Actual Quadrant: 2 | Actual Coord x: 1716 | Actual Coord y: 970 | User Quadrant: 2 | User Coord x: 1750 | User Coord y: 946
+
+trial Number: 60 | Actual Quadrant: 3 | Actual Coord x: 1400 | Actual Coord y: 870 | User Quadrant: 3 | User Coord x: 1370 | User Coord y: 866
+
+trial Number: 61 | Actual Quadrant: 3 | Actual Coord x: 1436 | Actual Coord y: 889 | User Quadrant: 3 | User Coord x: 1411 | User Coord y: 896
+
+trial Number: 62 | Actual Quadrant: 1 | Actual Coord x: 1569 | Actual Coord y: 1095 | User Quadrant: 1 | User Coord x: 1560 | User Coord y: 1103
+
+trial Number: 63 | Actual Quadrant: 2 | Actual Coord x: 1525 | Actual Coord y: 983 | User Quadrant: 1 | User Coord x: 1547 | User Coord y: 1010
+
+trial Number: 64 | Actual Quadrant: 4 | Actual Coord x: 1301 | Actual Coord y: 1085 | User Quadrant: 4 | User Coord x: 1211 | User Coord y: 1129
+
+trial Number: 65 | Actual Quadrant: 4 | Actual Coord x: 1152 | Actual Coord y: 1045 | User Quadrant: 4 | User Coord x: 1135 | User Coord y: 1043
+
+trial Number: 66 | Actual Quadrant: 3 | Actual Coord x: 1480 | Actual Coord y: 926 | User Quadrant: 3 | User Coord x: 1497 | User Coord y: 904
+
+trial Number: 67 | Actual Quadrant: 3 | Actual Coord x: 1463 | Actual Coord y: 875 | User Quadrant: 3 | User Coord x: 1442 | User Coord y: 890
+
+trial Number: 68 | Actual Quadrant: 4 | Actual Coord x: 1331 | Actual Coord y: 1074 | User Quadrant: 4 | User Coord x: 1317 | User Coord y: 1142
+
+trial Number: 69 | Actual Quadrant: 3 | Actual Coord x: 1483 | Actual Coord y: 968 | User Quadrant: 3 | User Coord x: 1459 | User Coord y: 975
+
+trial Number: 70 | Actual Quadrant: 3 | Actual Coord x: 1494 | Actual Coord y: 958 | User Quadrant: 2 | User Coord x: 1504 | User Coord y: 921
+
+trial Number: 71 | Actual Quadrant: 2 | Actual Coord x: 1518 | Actual Coord y: 998 | User Quadrant: 1 | User Coord x: 1504 | User Coord y: 1001
+
+trial Number: 72 | Actual Quadrant: 2 | Actual Coord x: 1534 | Actual Coord y: 986 | User Quadrant: 2 | User Coord x: 1528 | User Coord y: 955
+
+trial Number: 73 | Actual Quadrant: 3 | Actual Coord x: 1453 | Actual Coord y: 833 | User Quadrant: 3 | User Coord x: 1422 | User Coord y: 811
+
+trial Number: 74 | Actual Quadrant: 2 | Actual Coord x: 1755 | Actual Coord y: 922 | User Quadrant: 2 | User Coord x: 1784 | User Coord y: 911
+
+trial Number: 75 | Actual Quadrant: 2 | Actual Coord x: 1717 | Actual Coord y: 977 | User Quadrant: 2 | User Coord x: 1683 | User Coord y: 982
+
+trial Number: 76 | Actual Quadrant: 4 | Actual Coord x: 1500 | Actual Coord y: 1000 | User Quadrant: 4 | User Coord x: 1457 | User Coord y: 1026
+
+trial Number: 77 | Actual Quadrant: 4 | Actual Coord x: 1445 | Actual Coord y: 1020 | User Quadrant: 3 | User Coord x: 1428 | User Coord y: 997
+
+trial Number: 78 | Actual Quadrant: 4 | Actual Coord x: 1413 | Actual Coord y: 1010 | User Quadrant: 4 | User Coord x: 1301 | User Coord y: 1021
+
+trial Number: 79 | Actual Quadrant: 4 | Actual Coord x: 1423 | Actual Coord y: 1016 | User Quadrant: 4 | User Coord x: 1301 | User Coord y: 1021
+
+trial Number: 80 | Actual Quadrant: 4 | Actual Coord x: 1135 | Actual Coord y: 1035 | User Quadrant: 4 | User Coord x: 1125 | User Coord y: 1062
+

@@ -16,9 +16,6 @@ public class RandomCoord
 		//circ radius
 		double rad = (CirclePanel.radius + .5);
 		
-		//make rand
-		Random rand = new Random();
-		
 		//angle
 		double theta = 0;
 		double theta2 = 100;
@@ -103,23 +100,33 @@ public class RandomCoord
 				//max and min values for y w/in quadrant 1:
 				while(minY > maxY || minX > maxX)
 				{
-					//rand dist from center
-					double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
+					try
+					{
+						//rand dist from center
+						double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
+						
+						//max and min values for y w/in quadrant 1:
+						minY = (Math.tan( (-40*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+						maxY = (Math.tan( (-5*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
 					
-					//max and min values for y w/in quadrant 1:
-					minY = (Math.tan( (-40*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-					maxY = (Math.tan( (-5*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-				
-					//random distance from center of circle y
-					y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
-
-					//max and min values for y w/in quadrant 1:
-					minX = ( (1/(Math.tan( (-40*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
-					maxX = ( (1/(Math.tan( (-5*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
-				
-				
-					//randomly choose value between max and min
-					x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
+						//random distance from center of circle y
+						y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
+	
+						//max and min values for y w/in quadrant 1:
+						minX = ( (1/(Math.tan( (-40*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+						maxX = ( (1/(Math.tan( (-5*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+					
+						//randomly choose value between max and min
+						x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
+					}
+					
+					catch(IllegalArgumentException e)
+					{
+						System.out.println("error");
+						System.out.println("minY: " + minY + "maxY: " + maxY);
+						System.out.println("minX: " + minX + "mxnX: " + maxY);
+					}
+					
 				}
 				
 				//calc angle
@@ -157,22 +164,31 @@ public class RandomCoord
 				//while min > max
 				while(minY > maxY || maxX > maxX)
 				{
-					//random center
-					double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
+					try {
+						//random center
+						double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
+						
+						//max and min values for y w/in quadrant 1:
+						minY = (Math.tan( (85*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+						maxY = (Math.tan( (50*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+						
+						//random distance from center of circle y
+						y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
+						
+						//max and min values for y w/in quadrant 1:
+						minX = ( (1/(Math.tan( (50*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+						maxX = ( (1/(Math.tan( (85*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+						
+						//randomly choose value between max and min
+						x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
+					}
 					
-					//max and min values for y w/in quadrant 1:
-					minY = (Math.tan( (85*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-					maxY = (Math.tan( (50*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-					
-					//random distance from center of circle y
-					y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
-					
-					//max and min values for y w/in quadrant 1:
-					minX = ( (1/(Math.tan( (50*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
-					maxX = ( (1/(Math.tan( (85*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
-					
-					//randomly choose value between max and min
-					x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
+					catch(IllegalArgumentException e)
+					{
+						System.out.println("error");
+						System.out.println("minY: " + minY + "maxY: " + maxY);
+						System.out.println("minX: " + minX + "mxnX: " + maxY);
+					}
 				}
 				
 				
@@ -212,22 +228,31 @@ public class RandomCoord
 				//while min > max
 				while(minY > maxY || minX > maxX)
 				{
-					//rand dist
-					double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
+					try
+					{
+						//rand dist
+						double ranDisCentx = ThreadLocalRandom.current().nextDouble(min, max + 1);
+						
+						//max and min values for y w/in quadrant 1:
+						minY = (Math.tan( (-5*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
+						maxY = (Math.tan( (-40*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
 					
-					//max and min values for y w/in quadrant 1:
-					minY = (Math.tan( (-5*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-					maxY = (Math.tan( (-40*PI)/180) * (ranDisCentx - (.5*w) ) + (.5*h));
-				
-					//random distance from center of circle y
-					y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
-					
-					//max and min values for y w/in quadrant 1:
-					minX = ( (1/(Math.tan( (-5*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
-					maxX = ( (1/(Math.tan( (-40*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
-					
-					//randomly choose value between max and min
-					x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
+						//random distance from center of circle y
+						y = ThreadLocalRandom.current().nextDouble(minY, maxY + 1);
+						
+						//max and min values for y w/in quadrant 1:
+						minX = ( (1/(Math.tan( (-5*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+						maxX = ( (1/(Math.tan( (-40*PI)/180) ) ) * (y - (.5*h) ) + (.5*w) );
+						
+						//randomly choose value between max and min
+						x = ThreadLocalRandom.current().nextDouble(minX, maxX + 1);
+					}
+					catch(IllegalArgumentException e)
+					{
+						System.out.println("error");
+						System.out.println("minY: " + minY + "maxY: " + maxY);
+						System.out.println("minX: " + minX + "mxnX: " + maxY);
+					}
 				}
 
 				//calc angle
