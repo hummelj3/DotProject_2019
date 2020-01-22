@@ -64,9 +64,9 @@ public class TxtWriter
 		    out.write(" | ");
 		    out.write("User aprox distance from center: " + info[3]);
 		    out.write(" | ");
-		    out.write("Dot angle: " + info[4]);
+		    out.write("Dot angle: " + (info[4] * (180/Math.PI)) );
 		    out.write(" | ");
-		    out.write("User aprox angle: " + info[5]);
+		    out.write("User aprox angle: " + (info[5] * (180/Math.PI)) );
 		    out.write(" | ");
 		    out.write("Difference between angles: " + info[6]);
 		    out.write(" | ");
@@ -90,7 +90,9 @@ public class TxtWriter
 		
 		//getting screen dimension
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		
+		//screen dimensions 
+		int w = screenSize.width;
+		int h = screenSize.height;
 		//center coords
 		int centerX = screenSize.width/2;
 		int centerY = screenSize.height/2;
@@ -162,26 +164,18 @@ public class TxtWriter
 	    double resp_rad = user_vert;
 
 	    //dist from center of circle of user entered coordinates
-	    double dot_rad = act_vert;;
+	    double dot_rad = act_vert;
+	    
+	    //user dot angle 
+	    double resp_ang  = Math.atan( (userY - (.5*h)) / (userX - (.5*w)) );
+	    
+	    //act dot angle
+	    double dot_angle = Math.atan( (actCoordy - (.5*h)) / (actCoordx - (.5*w)) );
 
-	    //distance of dot from center 
-	    double resp_ang  = Math.acos((Math.pow(vert_1, 2) + Math.pow(user_vert, 2) - Math.pow(p1_user, 2)) / (2 * vert_1 * user_vert));
-
-	    //angle of user entered dot
-	    double dot_angle = Math.acos((Math.pow(vert_1, 2) + Math.pow(act_vert, 2) - Math.pow(p1_act, 2)) / (2 * vert_1 * act_vert));
-
-	    //angle of dot:
-	    //dependent on quadrant values determined here
-	    if(info[0] == 3 || info[0] == 4 ) 
-	    {
-
-		    dot_angle = (2*Math.PI) - dot_angle;
-	
-		    resp_ang = (2*Math.PI) - resp_ang;
-
-	    }
-
-	    double angleBias = dot_angle - resp_ang; //difference between angles
+	    //difference between angles
+	    double angleBias = dot_angle - resp_ang; 
+	    
+	    //difference between radii
 	    double radialBias = dot_rad - resp_rad; //difference between radii
 	    
 	    //put everything into array

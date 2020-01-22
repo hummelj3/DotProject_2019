@@ -11,7 +11,6 @@ public class DotDriver
 		{
 			public void run() 
 			{
-				// TODO Auto-generated method stub
 				//TODO 
 				//This is the dot driver this will be the engine of my code
 				/*
@@ -21,6 +20,7 @@ public class DotDriver
 				 * 3) Make circle that draws dots in quadrants based on input i.e. 1-4
 				 * 4) Send user input to txt doc.
 				 */
+				//opens dot program :D
 				new DotUIFrame("dot.exe");
 			}
 			

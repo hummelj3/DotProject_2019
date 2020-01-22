@@ -123,7 +123,7 @@ public class DotTimer
 					if(DotUIFrame.testing != true)
 					{
 						//custom cursor stuff
-						Image cursorImage = new ImageIcon("C:\\Users\\Jeremy\\git\\repository\\DotApp_2019\\src\\CustomHand1.png").getImage();
+						Image cursorImage = new ImageIcon("./src/CustomHand1.png").getImage();
 						Point hotspot = new Point(0, 0);
 						String cursorName = "CursorHand";
 						c.setCursor(c.getToolkit().createCustomCursor(cursorImage, hotspot, cursorName));

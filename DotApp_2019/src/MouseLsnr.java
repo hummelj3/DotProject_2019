@@ -3,6 +3,8 @@ import java.awt.Image;
 import java.awt.Point;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.nio.file.Paths;
+
 import javax.swing.ImageIcon;
 import javax.swing.Timer;
 import javax.swing.event.EventListenerList;
@@ -18,24 +20,28 @@ public class MouseLsnr
 		String mousePath;
 		String mousePath2;
 		//custom cursor stuff
-		if(DotUIFrame.isExe == false)
+		/*if(DotUIFrame.isExe == false)
 		{
 			mousePath = "C:\\Users\\Jeremy\\git\\repository\\DotApp_2019\\src\\CustomHand.png";
 			mousePath2 = "C:\\Users\\Jeremy\\git\\repository\\DotApp_2019\\src\\CustomHand1.png";
-		}
-		else
-		{
-			mousePath = ".\\src\\CustomHand.png";
-			mousePath2 = ".\\src\\CustomHand1.png";
-		}
+		}*/
+		//else
+		//{
+		//String path = Paths.get("").toAbsolutePath().toString();
+		//mousePath = path + ".\\src\\CustomHand.png";
+		//mousePath2 = path + ".\\src\\CustomHand1.png";
+		//}
 		Point hotspot = new Point(0, 0);
-		Image cursorImage2 = new ImageIcon(mousePath).getImage();
-		String cursorName2 = "CursorHand2";
-		Image cursorImage = new ImageIcon(mousePath2).getImage();
+		Image cursorImage2 = new ImageIcon("./src/CustomHand.png").getImage();
+		String cursorName2 = "CursorHand1";
+		Image cursorImage = new ImageIcon("./src/CustomHand1.png").getImage();
 		String cursorName = "CursorHand";
 
 		//making txt writer
 		txtWriter = new TxtWriter();
+		
+		//set cursor
+		//c.setCursor(c.getToolkit().createCustomCursor(cursorImage2, hotspot, cursorName2));   
 		
 		//if testing mode on...
 		if(DotUIFrame.testing == true)
